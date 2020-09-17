@@ -19,6 +19,23 @@ Title is WIP. This is a repository for an experiment relating NMT quality and po
 - Validační překlad
 - Zpracovat logy & sepsat článek
 
+# Documents
+
+| Document name | domain | lines | words | description |
+|-|-|-|-|-|
+| Monsoon | news | 11 | 365 | guardian.260810 |
+| Dare | news | 13 | 430 | reuters.276702 | 
+| Hole | news | 10 | 272 | sky.com.20667 |
+| Whistle | news | 6 | 219 | nytimes.231903 |
+| China | news | 12 | 357 | en.ndtv.com.13143 |
+| Vaping | news | 21 | 533 | heraldscotland.com.7318 |
+| Turner | news | 8 | 303 | euronews-en.185744 |
+| Bible | bible | 16 | 338 | UEDIN |
+| Lease | agreement | 29 | 597 | Translated by Ondřej |
+| Audit (I)ntroduction | audit | 18 | 433 | Provided by NKÚ |
+| Audit (R)ecommendation | audit | 6 | 121 | Provided by NKÚ |
+| __Total__ | | __150__ | __3968__ | |
+
 # Acknowledgement
 
 Supported by [Memsource](https://memsource.com).
