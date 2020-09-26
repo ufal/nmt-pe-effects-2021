@@ -17,43 +17,46 @@ parser.add_argument('-d', '--shuffle-order-annotator',
                     default=False, action='store_true', help='Shuffle order for every annotator')
 args = parser.parse_args()
 
-mt_order = ['mt1', 'mt2', 'mt3']
-mt_number = len(mt_order)
+MT_ORDER = ['mt1', 'mt2', 'mt3']
+MT_NUMBER = len(MT_ORDER)
 # doc_order = ['hole', 'whistle', 'china', 'turner',
 #              'leap', 'lease', 'audit_i', 'audit_r']
-doc_order = ['hole', 'whistle', 'china']
+DOC_ORDER = ['hole', 'whistle', 'china']
+RELAX_MESSAGE = "# U této věty je možnost udělat si přestávku mezi překlady."
 
 print('Creating annotator queues')
 
-shuffle(mt_order)
+shuffle(MT_ORDER)
 if args.shuffle_order:
-    shuffle(doc_order)
+    shuffle(DOC_ORDER)
 
-mt_buckets = [{} for _ in range(mt_number)]
+mt_buckets = [{} for _ in range(MT_NUMBER)]
 
-for doc_name in doc_order:
-    for mt_index, mt_name in enumerate(mt_order):
+for doc_name in DOC_ORDER:
+    for mt_index, mt_name in enumerate(MT_ORDER):
         filename = f'{args.docs_dir}/{doc_name}-{mt_name}'
         with open(filename, 'r') as f:
             data = f.read()
             mt_buckets[mt_index][doc_name] = data
 
-annotator_buckets = [{} for _ in range(mt_number)]
+annotator_buckets = [{} for _ in range(MT_NUMBER)]
 
 offset = 0
-for doc_name in doc_order:
-    for mt_index, mt_name in enumerate(mt_order):
-        annotator_index = (mt_index + offset) % mt_number
+for doc_name in DOC_ORDER:
+    for mt_index, mt_name in enumerate(MT_ORDER):
+        annotator_index = (mt_index + offset) % MT_NUMBER
         annotator_buckets[annotator_index][doc_name] = mt_buckets[mt_index][doc_name]
-    offset = (offset+1) % mt_number
+    offset = (offset+1) % MT_NUMBER
 
 
 print('Serializing data')
 
-annotator_serial = [""] * mt_number
+annotator_serial = [""] * MT_NUMBER
 
 for annotator_index, annotator_bucket in enumerate(annotator_buckets):
-    for doc_name in doc_order:
+    for doc_index, doc_name in enumerate(DOC_ORDER):
+        if doc_index != 0:
+            annotator_serial[annotator_index] += RELAX_MESSAGE + '\n'  
         annotator_serial[annotator_index] += annotator_buckets[annotator_index][doc_name]
 
 print('Storing data')
