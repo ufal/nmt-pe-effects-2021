@@ -1,8 +1,9 @@
-hole-mt3 text 1
-hole-mt3 text 2
-# U této věty je možnost udělat si přestávku mezi překlady.
+# (1)
+hole-mt1 text 1
+hole-mt1 text 2
+# U této věty je možnost udělat si přestávku mezi překlady. (3) 
 whistle-mt2 text 1
 whistle-mt2 text 2
-# U této věty je možnost udělat si přestávku mezi překlady.
-china-mt1 text 1
-china-mt1 text 2
+# U této věty je možnost udělat si přestávku mezi překlady. (8) 
+china-mt3 text 1
+china-mt3 text 2
