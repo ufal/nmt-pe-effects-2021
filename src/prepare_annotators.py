@@ -78,7 +78,7 @@ print('Storing data')
 
 makedirs(args.out_dir, exist_ok=True)
 for annotator_index, annotator_bucket in enumerate(annotator_buckets):
-    with open(f'{args.out_dir}/a{annotator_index}', 'w') as f:
+    with open(f'{args.out_dir}/a{annotator_index}.txt', 'w') as f:
         f.write(annotator_serial[annotator_index])
 
 

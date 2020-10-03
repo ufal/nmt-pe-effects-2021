@@ -1,9 +1,9 @@
 # (2)
-Lorem ipsum Hole translated by MT2 first line
-Lorem ipsum Hole translated by MT2 second line
+Lorem ipsum Hole translated by MT1 first line
+Lorem ipsum Hole translated by MT1 second line
 # U této věty je možnost udělat si přestávku mezi překlady. (4) 
 Lorem ipsum Whistle translated by MT3 first line
 Lorem ipsum Whistle translated by MT3 second line
 # U této věty je možnost udělat si přestávku mezi překlady. (6) 
-Lorem ipsum China translated by MT1 first line
-Lorem ipsum China translated by MT1 second line
+Lorem ipsum China translated by MT2 first line
+Lorem ipsum China translated by MT2 second line
