@@ -1,1 +1,47 @@
-{"0": {"annotator": 0, "doc_name": "hole", "mt_index": 0}, "1": {"annotator": 1, "doc_name": "hole", "mt_index": 1}, "2": {"annotator": 2, "doc_name": "hole", "mt_index": 2}, "3": {"annotator": 1, "doc_name": "whistle", "mt_index": 0}, "4": {"annotator": 2, "doc_name": "whistle", "mt_index": 1}, "5": {"annotator": 0, "doc_name": "whistle", "mt_index": 2}, "6": {"annotator": 2, "doc_name": "china", "mt_index": 0}, "7": {"annotator": 0, "doc_name": "china", "mt_index": 1}, "8": {"annotator": 1, "doc_name": "china", "mt_index": 2}}
+{
+    "0": {
+        "annotator": 0,
+        "doc_name": "hole",
+        "mt_name": "mt1"
+    },
+    "1": {
+        "annotator": 1,
+        "doc_name": "hole",
+        "mt_name": "mt3"
+    },
+    "2": {
+        "annotator": 2,
+        "doc_name": "hole",
+        "mt_name": "mt2"
+    },
+    "3": {
+        "annotator": 1,
+        "doc_name": "whistle",
+        "mt_name": "mt1"
+    },
+    "4": {
+        "annotator": 2,
+        "doc_name": "whistle",
+        "mt_name": "mt3"
+    },
+    "5": {
+        "annotator": 0,
+        "doc_name": "whistle",
+        "mt_name": "mt2"
+    },
+    "6": {
+        "annotator": 2,
+        "doc_name": "china",
+        "mt_name": "mt1"
+    },
+    "7": {
+        "annotator": 0,
+        "doc_name": "china",
+        "mt_name": "mt3"
+    },
+    "8": {
+        "annotator": 1,
+        "doc_name": "china",
+        "mt_name": "mt2"
+    }
+}

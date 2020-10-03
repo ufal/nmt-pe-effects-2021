@@ -52,11 +52,11 @@ offset = 0
 for doc_name in DOC_ORDER:
     for mt_index, mt_name in enumerate(MT_ORDER):
         annotator_index = (mt_index + offset) % MT_NUMBER
-        annotator_buckets[annotator_index][doc_name] = (mt_buckets[mt_index][doc_name], indexloc)
+        annotator_buckets[annotator_index][doc_name] = (mt_buckets[mt_index][doc_name]+'\n', indexloc)
         indexdata[indexloc] = {
             'annotator': annotator_index,
             'doc_name': doc_name,
-            'mt_index': mt_index
+            'mt_name': mt_name
         }
         indexloc += 1
     offset = (offset+1) % MT_NUMBER
