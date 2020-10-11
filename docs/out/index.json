@@ -1,0 +1,602 @@
+{
+    "0": {
+        "annotator": 0,
+        "doc_name": "hole",
+        "mt_name": "m01"
+    },
+    "1": {
+        "annotator": 1,
+        "doc_name": "hole",
+        "mt_name": "m05"
+    },
+    "2": {
+        "annotator": 2,
+        "doc_name": "hole",
+        "mt_name": "m03"
+    },
+    "3": {
+        "annotator": 3,
+        "doc_name": "hole",
+        "mt_name": "m13"
+    },
+    "4": {
+        "annotator": 4,
+        "doc_name": "hole",
+        "mt_name": "m11"
+    },
+    "5": {
+        "annotator": 5,
+        "doc_name": "hole",
+        "mt_name": "m02"
+    },
+    "6": {
+        "annotator": 6,
+        "doc_name": "hole",
+        "mt_name": "m07"
+    },
+    "7": {
+        "annotator": 7,
+        "doc_name": "hole",
+        "mt_name": "ref"
+    },
+    "8": {
+        "annotator": 8,
+        "doc_name": "hole",
+        "mt_name": "m06"
+    },
+    "9": {
+        "annotator": 9,
+        "doc_name": "hole",
+        "mt_name": "m12"
+    },
+    "10": {
+        "annotator": 10,
+        "doc_name": "hole",
+        "mt_name": "m09"
+    },
+    "11": {
+        "annotator": 11,
+        "doc_name": "hole",
+        "mt_name": "src"
+    },
+    "12": {
+        "annotator": 12,
+        "doc_name": "hole",
+        "mt_name": "m10"
+    },
+    "13": {
+        "annotator": 13,
+        "doc_name": "hole",
+        "mt_name": "m08"
+    },
+    "14": {
+        "annotator": 14,
+        "doc_name": "hole",
+        "mt_name": "m04"
+    },
+    "15": {
+        "annotator": 1,
+        "doc_name": "whistle",
+        "mt_name": "m01"
+    },
+    "16": {
+        "annotator": 2,
+        "doc_name": "whistle",
+        "mt_name": "m05"
+    },
+    "17": {
+        "annotator": 3,
+        "doc_name": "whistle",
+        "mt_name": "m03"
+    },
+    "18": {
+        "annotator": 4,
+        "doc_name": "whistle",
+        "mt_name": "m13"
+    },
+    "19": {
+        "annotator": 5,
+        "doc_name": "whistle",
+        "mt_name": "m11"
+    },
+    "20": {
+        "annotator": 6,
+        "doc_name": "whistle",
+        "mt_name": "m02"
+    },
+    "21": {
+        "annotator": 7,
+        "doc_name": "whistle",
+        "mt_name": "m07"
+    },
+    "22": {
+        "annotator": 8,
+        "doc_name": "whistle",
+        "mt_name": "ref"
+    },
+    "23": {
+        "annotator": 9,
+        "doc_name": "whistle",
+        "mt_name": "m06"
+    },
+    "24": {
+        "annotator": 10,
+        "doc_name": "whistle",
+        "mt_name": "m12"
+    },
+    "25": {
+        "annotator": 11,
+        "doc_name": "whistle",
+        "mt_name": "m09"
+    },
+    "26": {
+        "annotator": 12,
+        "doc_name": "whistle",
+        "mt_name": "src"
+    },
+    "27": {
+        "annotator": 13,
+        "doc_name": "whistle",
+        "mt_name": "m10"
+    },
+    "28": {
+        "annotator": 14,
+        "doc_name": "whistle",
+        "mt_name": "m08"
+    },
+    "29": {
+        "annotator": 0,
+        "doc_name": "whistle",
+        "mt_name": "m04"
+    },
+    "30": {
+        "annotator": 2,
+        "doc_name": "china",
+        "mt_name": "m01"
+    },
+    "31": {
+        "annotator": 3,
+        "doc_name": "china",
+        "mt_name": "m05"
+    },
+    "32": {
+        "annotator": 4,
+        "doc_name": "china",
+        "mt_name": "m03"
+    },
+    "33": {
+        "annotator": 5,
+        "doc_name": "china",
+        "mt_name": "m13"
+    },
+    "34": {
+        "annotator": 6,
+        "doc_name": "china",
+        "mt_name": "m11"
+    },
+    "35": {
+        "annotator": 7,
+        "doc_name": "china",
+        "mt_name": "m02"
+    },
+    "36": {
+        "annotator": 8,
+        "doc_name": "china",
+        "mt_name": "m07"
+    },
+    "37": {
+        "annotator": 9,
+        "doc_name": "china",
+        "mt_name": "ref"
+    },
+    "38": {
+        "annotator": 10,
+        "doc_name": "china",
+        "mt_name": "m06"
+    },
+    "39": {
+        "annotator": 11,
+        "doc_name": "china",
+        "mt_name": "m12"
+    },
+    "40": {
+        "annotator": 12,
+        "doc_name": "china",
+        "mt_name": "m09"
+    },
+    "41": {
+        "annotator": 13,
+        "doc_name": "china",
+        "mt_name": "src"
+    },
+    "42": {
+        "annotator": 14,
+        "doc_name": "china",
+        "mt_name": "m10"
+    },
+    "43": {
+        "annotator": 0,
+        "doc_name": "china",
+        "mt_name": "m08"
+    },
+    "44": {
+        "annotator": 1,
+        "doc_name": "china",
+        "mt_name": "m04"
+    },
+    "45": {
+        "annotator": 3,
+        "doc_name": "turner",
+        "mt_name": "m01"
+    },
+    "46": {
+        "annotator": 4,
+        "doc_name": "turner",
+        "mt_name": "m05"
+    },
+    "47": {
+        "annotator": 5,
+        "doc_name": "turner",
+        "mt_name": "m03"
+    },
+    "48": {
+        "annotator": 6,
+        "doc_name": "turner",
+        "mt_name": "m13"
+    },
+    "49": {
+        "annotator": 7,
+        "doc_name": "turner",
+        "mt_name": "m11"
+    },
+    "50": {
+        "annotator": 8,
+        "doc_name": "turner",
+        "mt_name": "m02"
+    },
+    "51": {
+        "annotator": 9,
+        "doc_name": "turner",
+        "mt_name": "m07"
+    },
+    "52": {
+        "annotator": 10,
+        "doc_name": "turner",
+        "mt_name": "ref"
+    },
+    "53": {
+        "annotator": 11,
+        "doc_name": "turner",
+        "mt_name": "m06"
+    },
+    "54": {
+        "annotator": 12,
+        "doc_name": "turner",
+        "mt_name": "m12"
+    },
+    "55": {
+        "annotator": 13,
+        "doc_name": "turner",
+        "mt_name": "m09"
+    },
+    "56": {
+        "annotator": 14,
+        "doc_name": "turner",
+        "mt_name": "src"
+    },
+    "57": {
+        "annotator": 0,
+        "doc_name": "turner",
+        "mt_name": "m10"
+    },
+    "58": {
+        "annotator": 1,
+        "doc_name": "turner",
+        "mt_name": "m08"
+    },
+    "59": {
+        "annotator": 2,
+        "doc_name": "turner",
+        "mt_name": "m04"
+    },
+    "60": {
+        "annotator": 4,
+        "doc_name": "leap",
+        "mt_name": "m01"
+    },
+    "61": {
+        "annotator": 5,
+        "doc_name": "leap",
+        "mt_name": "m05"
+    },
+    "62": {
+        "annotator": 6,
+        "doc_name": "leap",
+        "mt_name": "m03"
+    },
+    "63": {
+        "annotator": 7,
+        "doc_name": "leap",
+        "mt_name": "m13"
+    },
+    "64": {
+        "annotator": 8,
+        "doc_name": "leap",
+        "mt_name": "m11"
+    },
+    "65": {
+        "annotator": 9,
+        "doc_name": "leap",
+        "mt_name": "m02"
+    },
+    "66": {
+        "annotator": 10,
+        "doc_name": "leap",
+        "mt_name": "m07"
+    },
+    "67": {
+        "annotator": 11,
+        "doc_name": "leap",
+        "mt_name": "ref"
+    },
+    "68": {
+        "annotator": 12,
+        "doc_name": "leap",
+        "mt_name": "m06"
+    },
+    "69": {
+        "annotator": 13,
+        "doc_name": "leap",
+        "mt_name": "m12"
+    },
+    "70": {
+        "annotator": 14,
+        "doc_name": "leap",
+        "mt_name": "m09"
+    },
+    "71": {
+        "annotator": 0,
+        "doc_name": "leap",
+        "mt_name": "src"
+    },
+    "72": {
+        "annotator": 1,
+        "doc_name": "leap",
+        "mt_name": "m10"
+    },
+    "73": {
+        "annotator": 2,
+        "doc_name": "leap",
+        "mt_name": "m08"
+    },
+    "74": {
+        "annotator": 3,
+        "doc_name": "leap",
+        "mt_name": "m04"
+    },
+    "75": {
+        "annotator": 5,
+        "doc_name": "lease",
+        "mt_name": "m01"
+    },
+    "76": {
+        "annotator": 6,
+        "doc_name": "lease",
+        "mt_name": "m05"
+    },
+    "77": {
+        "annotator": 7,
+        "doc_name": "lease",
+        "mt_name": "m03"
+    },
+    "78": {
+        "annotator": 8,
+        "doc_name": "lease",
+        "mt_name": "m13"
+    },
+    "79": {
+        "annotator": 9,
+        "doc_name": "lease",
+        "mt_name": "m11"
+    },
+    "80": {
+        "annotator": 10,
+        "doc_name": "lease",
+        "mt_name": "m02"
+    },
+    "81": {
+        "annotator": 11,
+        "doc_name": "lease",
+        "mt_name": "m07"
+    },
+    "82": {
+        "annotator": 12,
+        "doc_name": "lease",
+        "mt_name": "ref"
+    },
+    "83": {
+        "annotator": 13,
+        "doc_name": "lease",
+        "mt_name": "m06"
+    },
+    "84": {
+        "annotator": 14,
+        "doc_name": "lease",
+        "mt_name": "m12"
+    },
+    "85": {
+        "annotator": 0,
+        "doc_name": "lease",
+        "mt_name": "m09"
+    },
+    "86": {
+        "annotator": 1,
+        "doc_name": "lease",
+        "mt_name": "src"
+    },
+    "87": {
+        "annotator": 2,
+        "doc_name": "lease",
+        "mt_name": "m10"
+    },
+    "88": {
+        "annotator": 3,
+        "doc_name": "lease",
+        "mt_name": "m08"
+    },
+    "89": {
+        "annotator": 4,
+        "doc_name": "lease",
+        "mt_name": "m04"
+    },
+    "90": {
+        "annotator": 6,
+        "doc_name": "audit_i",
+        "mt_name": "m01"
+    },
+    "91": {
+        "annotator": 7,
+        "doc_name": "audit_i",
+        "mt_name": "m05"
+    },
+    "92": {
+        "annotator": 8,
+        "doc_name": "audit_i",
+        "mt_name": "m03"
+    },
+    "93": {
+        "annotator": 9,
+        "doc_name": "audit_i",
+        "mt_name": "m13"
+    },
+    "94": {
+        "annotator": 10,
+        "doc_name": "audit_i",
+        "mt_name": "m11"
+    },
+    "95": {
+        "annotator": 11,
+        "doc_name": "audit_i",
+        "mt_name": "m02"
+    },
+    "96": {
+        "annotator": 12,
+        "doc_name": "audit_i",
+        "mt_name": "m07"
+    },
+    "97": {
+        "annotator": 13,
+        "doc_name": "audit_i",
+        "mt_name": "ref"
+    },
+    "98": {
+        "annotator": 14,
+        "doc_name": "audit_i",
+        "mt_name": "m06"
+    },
+    "99": {
+        "annotator": 0,
+        "doc_name": "audit_i",
+        "mt_name": "m12"
+    },
+    "100": {
+        "annotator": 1,
+        "doc_name": "audit_i",
+        "mt_name": "m09"
+    },
+    "101": {
+        "annotator": 2,
+        "doc_name": "audit_i",
+        "mt_name": "src"
+    },
+    "102": {
+        "annotator": 3,
+        "doc_name": "audit_i",
+        "mt_name": "m10"
+    },
+    "103": {
+        "annotator": 4,
+        "doc_name": "audit_i",
+        "mt_name": "m08"
+    },
+    "104": {
+        "annotator": 5,
+        "doc_name": "audit_i",
+        "mt_name": "m04"
+    },
+    "105": {
+        "annotator": 7,
+        "doc_name": "audit_r",
+        "mt_name": "m01"
+    },
+    "106": {
+        "annotator": 8,
+        "doc_name": "audit_r",
+        "mt_name": "m05"
+    },
+    "107": {
+        "annotator": 9,
+        "doc_name": "audit_r",
+        "mt_name": "m03"
+    },
+    "108": {
+        "annotator": 10,
+        "doc_name": "audit_r",
+        "mt_name": "m13"
+    },
+    "109": {
+        "annotator": 11,
+        "doc_name": "audit_r",
+        "mt_name": "m11"
+    },
+    "110": {
+        "annotator": 12,
+        "doc_name": "audit_r",
+        "mt_name": "m02"
+    },
+    "111": {
+        "annotator": 13,
+        "doc_name": "audit_r",
+        "mt_name": "m07"
+    },
+    "112": {
+        "annotator": 14,
+        "doc_name": "audit_r",
+        "mt_name": "ref"
+    },
+    "113": {
+        "annotator": 0,
+        "doc_name": "audit_r",
+        "mt_name": "m06"
+    },
+    "114": {
+        "annotator": 1,
+        "doc_name": "audit_r",
+        "mt_name": "m12"
+    },
+    "115": {
+        "annotator": 2,
+        "doc_name": "audit_r",
+        "mt_name": "m09"
+    },
+    "116": {
+        "annotator": 3,
+        "doc_name": "audit_r",
+        "mt_name": "src"
+    },
+    "117": {
+        "annotator": 4,
+        "doc_name": "audit_r",
+        "mt_name": "m10"
+    },
+    "118": {
+        "annotator": 5,
+        "doc_name": "audit_r",
+        "mt_name": "m08"
+    },
+    "119": {
+        "annotator": 6,
+        "doc_name": "audit_r",
+        "mt_name": "m04"
+    }
+}

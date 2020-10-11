@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
-from random import shuffle
+import random
 from glob import glob
 from os import makedirs
 import json
@@ -15,7 +15,7 @@ parser.add_argument('out_dir',
 parser.add_argument('-s', '--shuffle-order',
                     default=False, action='store_true', help='Shuffle base order')
 parser.add_argument('-d', '--shuffle-order-annotator',
-                    default=False, action='store_true', help='Shuffle order for every annotator')
+                    default=True, action='store_true', help='Shuffle order for every annotator')
 args = parser.parse_args()
 
 MT_ORDER = ['m' + ('0' if x < 10 else '') + str(x)
@@ -29,9 +29,9 @@ INDEX_FILENAME = 'index.json'
 
 print('Loading data')
 
-shuffle(MT_ORDER)
+random.shuffle(MT_ORDER)
 if args.shuffle_order:
-    shuffle(DOC_ORDER)
+    random.shuffle(DOC_ORDER)
 
 mt_buckets = [{} for _ in range(MT_NUMBER)]
 src_data = {}
@@ -80,7 +80,9 @@ annotator_serial = [""] * MT_NUMBER
 annotator_serial_src = [""] * MT_NUMBER
 
 for annotator_index, annotator_bucket in enumerate(annotator_buckets):
-    for doc_index, doc_name in enumerate(DOC_ORDER):
+    if args.shuffle_order_annotator:
+        doc_order_a = random.sample(DOC_ORDER, len(DOC_ORDER))
+    for doc_index, doc_name in enumerate(doc_order_a):
         if doc_index != 0:
             annotator_serial[annotator_index] += f'# {RELAX_MESSAGE} ({annotator_buckets[annotator_index][doc_name][2]}) \n'
             annotator_serial_src[annotator_index] += f'# {RELAX_MESSAGE} ({annotator_buckets[annotator_index][doc_name][2]}) \n'
