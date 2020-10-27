@@ -19,7 +19,7 @@ parser.add_argument('-d', '--shuffle-order-annotator',
 args = parser.parse_args()
 
 MT_ORDER = ['m' + ('0' if x < 10 else '') + str(x)
-            for x in range(1, 13+1)] + ['ref', 'src']
+            for x in range(1, 13+1)] + ['ref', 'src', 'google', 'microsoft']
 MT_NUMBER = len(MT_ORDER)
 DOC_ORDER = ['hole', 'whistle', 'china', 'turner',
              'leap', 'lease', 'audit_i', 'audit_r']
