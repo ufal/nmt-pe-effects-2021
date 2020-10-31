@@ -23,7 +23,7 @@
 | doc-698515.sgm	   | 35.38 | 28.46 | M13 | submitted to WMT2020 as CUNI-DocTransformer; "second peak" ~ 5 auth + 3 synth |
 
 BLEU-pe is BLEU computed on [our PE set](https://github.com/ELITR/nmt-pe-effects-2020/blob/master/docs/translations/sgm/REFERENCE.sgm).
-BLEU-wmt0818 is BLEU computed on the dev set: WMT08, WMT09...WMT18 concatenated.
+BLEU-wmt0818 is BLEU computed on the dev set: WMT08, WMT09...WMT18 concatenated, but only orig-en and orig-cs docs.
 BLEU was computed with "sacrebleu -w 2". The checkpoints were chosen according to their dev-set BLEU.
 
 ![BLEU learning curves](BLEU-sent-cubbitt-2020.png)
