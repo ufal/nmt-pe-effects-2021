@@ -25,3 +25,5 @@
 BLEU-pe is BLEU computed on [our PE set](https://github.com/ELITR/nmt-pe-effects-2020/blob/master/docs/translations/sgm/REFERENCE.sgm).
 BLEU-wmt0818 is BLEU computed on the dev set: WMT08, WMT09...WMT18 concatenated.
 BLEU was computed with "sacrebleu -w 2". The checkpoints were chosen according to their dev-set BLEU.
+
+![BLEU learning curves](BLEU-sent-cubbitt-2020.png)
