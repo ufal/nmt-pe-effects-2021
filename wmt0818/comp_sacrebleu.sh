@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for f in ./{doc,sent}-cubbitt-2020/*; do
+for f in ./{doc,sent}-cubbitt-2020/* ./commercial/* ; do
 	BLEU=`sacrebleu -b -w 2 ref-cs.txt < $f`
 	b=`basename $f`
 	echo "$BLEU $f";

@@ -21,6 +21,8 @@
 | sent-1054981.txt   | 35.55 | 37.59 | 28.72 | M11 | "before the second peak" ~ 8 auth|
 | sent-1058593.txt   | 34.77 | 36.87 | 28.95 | M12 | submitted to WMT2020 as CUNI-Transformer; "second peak" ~ 6-7 auth + 1-2 synth |
 | doc-698515.sgm	   | 35.38 | 37.46 | 28.46 | M13 | submitted to WMT2020 as CUNI-DocTransformer; "second peak" ~ 5 auth + 3 synth |
+| Google | 37.56 | 40.10 | 26.06 | C1 |  |
+| Microsoft | 33.06 | 34.20 | 26.30 | C2 |  |
 
 BLEU was computed with `sacrebleu -w 2`, "BLEU lc intl" was computed with `sacrebleu -w 2 -lc -tok intl`.
 
