@@ -9,8 +9,8 @@
 | MODEL              | BLEU<br>pe  | BLEU<br>wmt0818 | Name | note |
 |-|-|-|-|-|
 | sent-25385.txt     | 25.35 | 19.07 | M01 | the first checkpoint available with avg8 (after 7 hours of training)|
-| sent-25385.txt     | 31.61 | 22.44 |     | |
-| sent-29022.txt     | 33.09 | 23.86 |     | |
+| sent-29022.txt     | 31.61 | 22.44 |     | |
+| sent-29333.txt     | 33.09 | 23.86 |     | |
 | sent-32966.txt     | 33.63 | 24.42 | M02 | |
 | sent-72836.txt     | 35.22 | 26.25 | M03 | until here the dev-set BLEU curves grows monotonically (despite BlockBT training), the "second peak" ~ 6-7auth + 1-2synth checkpoints in avg8 |
 | sent-148593.txt    | 37.17 | 27.87 | M04 | the nearest following "first peak" ~ 1-2 synth + 6-7 auth |
