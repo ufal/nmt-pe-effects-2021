@@ -7,7 +7,7 @@
 - The training speed was about 3466 steps per hour (on 10 GPUs).
 
 | MODEL              | BLEU<br>pe  | BLEU<br>wmt0818 | Name | note |
-|-|-|-|-|-|-|
+|-|-|-|-|-|
 | sent-25385.txt     | 25.35 | 19.07 | M01 | the first checkpoint available with avg8 (after 7 hours of training)|
 | sent-25385.txt     | 31.61 | 22.44 |     | |
 | sent-29022.txt     | 33.09 | 23.86 |     | |
