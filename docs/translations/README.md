@@ -2,7 +2,7 @@
 - doc  = document-level CUBBITT 2020
 
 - The number in the filename is the number of training steps.
-- The batch size was 23.200 tokens for sent model and 18.000 tokens for the doc model.
+- The batch size was 23200 tokens for sent model and 18000 tokens for the doc model.
 - The subword vocabulary size was 32k.
 - The training speed was about 3466 steps per hour (on 10 GPUs).
 
