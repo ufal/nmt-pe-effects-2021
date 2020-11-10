@@ -46,7 +46,7 @@ for doc_name in DOC_ORDER:
                 # performance loss due to duplication
                 src_data[doc_name] = str(data)
                 data = '\n'.join(
-                    ['! (not translation available)']*(data.count('\n')+1))
+                    ['! (no translation available)']*(data.count('\n')+1))
             mt_buckets[mt_index][doc_name] = data
 
 
@@ -97,9 +97,9 @@ print('Storing data')
 makedirs(args.out_dir, exist_ok=True)
 for annotator_index, annotator_bucket in enumerate(annotator_buckets):
     with open(f'{args.out_dir}/a{annotator_index}.tgt', 'w') as f:
-        f.write(annotator_serial[annotator_index])
+        f.write(annotator_serial[annotator_index].rstrip('\n'))
     with open(f'{args.out_dir}/a{annotator_index}.src', 'w') as f:
-        f.write(annotator_serial_src[annotator_index])
+        f.write(annotator_serial_src[annotator_index].rstrip('\n'))
 
 
 print('Storing index')
