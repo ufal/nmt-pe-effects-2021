@@ -1,0 +1,1634 @@
+<?xml version='1.0' encoding='UTF-8'?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:m="http://www.memsource.com/mxlf/2.0" version="1.2" m:version="2.5" m:level="1">
+<file datatype="x-undefined" original="input-file-6.txt" source-language="en" target-language="cs" m:begin-group-id="0" m:end-group-id="106" m:file-format="PLAIN_TEXT" m:job-uid="qOEeEOxlj1jeey7AEq17W0" m:project-uid="Qt98Ja1cnonBl2Pe7SSwb1" m:task-id="rah0n1kqa5ZdnZJv1_dc6">
+
+<header>
+<m:in-ctx-preview-skel bilingual="false">
+<![CDATA[<html>
+<head>
+<style>
+body, span {white-space: pre;}
+</style>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="UTF-8">
+</head>
+<body>
+<span><span id="m-tgroup_0" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_1" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_2" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_3" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_4" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_5" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_6" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_7" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_8" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_9" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_10" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_11" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_12" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_13" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_14" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_15" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_16" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_17" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_18" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_19" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_20" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_21" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_22" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_23" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_24" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_25" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_26" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_27" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_28" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_29" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_30" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_31" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_32" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_33" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_34" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_35" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_36" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_37" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_38" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_39" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_40" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_41" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_42" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_43" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_44" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_45" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_46" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_47" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_48" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_49" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_50" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_51" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_52" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_53" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_54" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_55" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_56" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_57" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_58" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_59" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_60" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_61" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_62" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_63" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_64" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_65" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_66" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_67" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_68" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_69" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_70" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_71" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_72" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_73" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_74" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_75" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_76" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_77" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_78" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_79" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_80" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_81" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_82" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_83" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_84" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_85" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_86" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_87" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_88" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_89" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_90" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_91" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_92" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_93" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_94" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_95" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_96" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_97" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_98" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_99" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_100" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_101" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_102" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_103" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_104" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_105" class="m-tgroup"></span></span>
+<span><span id="m-tgroup_106" class="m-tgroup"></span></span>
+</body>
+</html>]]>
+</m:in-ctx-preview-skel>
+</header>
+<body>
+
+<group id="0" m:para-id="0">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:0" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="0" m:created-at="1606124874101" m:created-by="540393" m:modified-at="1606124877502" m:modified-by="540393" m:level-edited="false">
+<source># (98)</source>
+<target># (98)</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>829556</m:editing-time>
+<m:thinking-time>829453</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="1" m:para-id="1">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:1" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="1" m:created-at="1606124880398" m:created-by="540393" m:modified-at="1606124880527" m:modified-by="540393" m:level-edited="false">
+<source>INTRODUCTION</source>
+<target>ÚVOD</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>ÚVOD</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>2938</m:editing-time>
+<m:thinking-time>2722</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="2" m:para-id="2">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:2" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="2" m:created-at="1606125049646" m:created-by="540393" m:modified-at="1606125049783" m:modified-by="540393" m:level-edited="false">
+<source>The developing union of people of Europe is the driving force behind the cross-border cooperation as a part of broader territorial cooperation that has been with us for more than 20 years by now.</source>
+<target>Rozrůstající se unie evropských obyvatel je hnací silou přeshraniční spolupráce v rámci širší územní kooperace, která již funguje více než 20 let.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Rozvíjející se unie evropských obyvatel je hnací silou přeshraniční spolupráce v rámci širší územní spolupráce, která je s námi již více než 20 let.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>169160</m:editing-time>
+<m:thinking-time>7009</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="3" m:para-id="3">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:3" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="3" m:created-at="1606125295937" m:created-by="540393" m:modified-at="1606126900289" m:modified-by="540393" m:level-edited="false">
+<source>Let it provide itself the introduction into this joint report of supreme audit institutions of two close countries:</source>
+<target>V úvodu této společné zprávy nejvyšších kontrolních orgánů dvou blízkých zemí zazněla tato slova:</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Nechť se zabývá touto společnou zprávou nejvyšších kontrolních institucí dvou blízkých zemí:</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>292411</m:editing-time>
+<m:thinking-time>138250</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="4" m:para-id="4">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:4" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="4" m:created-at="1606125327182" m:created-by="540393" m:modified-at="1606126926082" m:modified-by="540393" m:level-edited="false">
+<source>“185 million EU citizens, or 37% of the population, live in border areas.</source>
+<target>„V příhraničních oblastech žije 185 milionů občanů EU, tedy 37 % všech obyvatel.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>"V příhraničních oblastech žije 185 milionů občanů EU, nebo 37 % obyvatelstva.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>45740</m:editing-time>
+<m:thinking-time>5034</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="5" m:para-id="5">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:5" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="5" m:created-at="1606125415841" m:created-by="540393" m:modified-at="1606141800894" m:modified-by="540393" m:level-edited="false">
+<source>These are often peripheral, underdeveloped or marginalised areas- sometimes the borders are historical scars.</source>
+<target>Často se jedná o okrajové, zaostalé nebo marginalizované oblasti, které bývají poznačeny historickým vývojem.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Často se jedná o okrajové, zaostalé nebo marginalizované oblasti, někdy jsou hranice historickými jizvami.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>146038</m:editing-time>
+<m:thinking-time>8006</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="6" m:para-id="6">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:6" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="6" m:created-at="1606125419511" m:created-by="540393" m:modified-at="1606127042127" m:modified-by="540393" m:level-edited="false">
+<source>The main aim of cross-border cooperation is to reduce the effect of borders as administrative, legal and physical barriers, tackle common problems and exploit untapped potential.</source>
+<target>Mezi hlavní cíle přeshraniční spolupráce patří zmírňování překážek, které hranice vytvářejí z administrativního, právního a fyzického hlediska, a také řešení společných problémů a využívání dosud neobjeveného potenciálu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Hlavním cílem přeshraniční spolupráce je snížit účinek hranic jako administrativních, právních a fyzických překážek, řešit společné problémy a využívat nevyužitý potenciál.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>230827</m:editing-time>
+<m:thinking-time>19736</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="7" m:para-id="7">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:7" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="7" m:created-at="1606125670336" m:created-by="540393" m:modified-at="1606127104674" m:modified-by="540393" m:level-edited="false">
+<source>The programmes cover a variety of border regions: some work with maritime areas, others with internal EU land borders or borders shared with candidate countries.</source>
+<target>Programy zahrnují celou řadu příhraničních regionů: některé se zaměřují na přímořské oblasti, jiné zase zůstávají v rámci suchozemských hranic EU nebo působí na hranicích sdílených s kandidátskými zeměmi.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Programy pokrývají celou řadu příhraničních regionů: některé pracují s námořními oblastmi, jiné s vnitřními pozemními hranicemi EU nebo hranicemi sdílenými s kandidátskými zeměmi.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>119707</m:editing-time>
+<m:thinking-time>4319</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="8" m:para-id="8">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:8" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="8" m:created-at="1606125822481" m:created-by="540393" m:modified-at="1606127140164" m:modified-by="540393" m:level-edited="false">
+<source>Most programmes are bilateral, but some consist of more than two neighbouring countries (e.g. South Baltic programme).</source>
+<target>Tyto programy jsou většinou oboustranně, ale některé z nich se týkají i několika sousedních zemí (např. Jihobaltský program).</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Většina programů je dvoustranná, ale některé se skládají z více než dvou sousedních zemí (např. programu v jižním Baltském moři).</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>181539</m:editing-time>
+<m:thinking-time>5611</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="9" m:para-id="9">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:9" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="9" m:created-at="1606125824774" m:created-by="540393" m:modified-at="1606127179861" m:modified-by="540393" m:level-edited="false">
+<source>The programmes last for seven years. It should be noted that there is EUR 5.7 billion in total earmarked for all programmes in this period.</source>
+<target>Programy jsou sedmileté. Je třeba poznamenat, že na všechny z nich bylo v tomto období vyčleněno celkem 5,7 miliard EUR.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Programy trvají sedm let. Je třeba poznamenat, že na všechny programy v tomto období bylo vyčleněno celkem 5,7 miliardy EUR.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>86791</m:editing-time>
+<m:thinking-time>22377</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="10" m:para-id="10">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:10" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="10" m:created-at="1606126080818" m:created-by="540393" m:modified-at="1606127267750" m:modified-by="540393" m:level-edited="false">
+<source>“The programme activities include: Repairing and (re)building cross-border roads, cycle paths or bridges; Investing in cross-border waste systems, medical equipment, research centres, anti-flood measures, and so on; Managing jointly natural or tourism sites; Developing common services for the local population; Advising on employment issues; and Creating thematic networks and clusters for innovation.</source>
+<target>„Programy se týkají těchto činností: opravy a (opětovné) vybudování přeshraničních silnic, cyklostezek nebo mostů, investic do přeshraničních odpadních systémů, zdravotnického vybavení, výzkumných středisek, protipovodňových opatření apod., společné správy přírodních nebo turistických oblastí, rozvoje společných služeb pro místní obyvatelstvo, poradenství v otázkách zaměstnanosti a vytváření sítí a klastrů v určitých oblastech pro potřeby inovace.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>"Programové činnosti zahrnují: opravy a (re)budování přeshraničních silnic, cyklostezek nebo mostů; investice do přeshraničních systémů odpadů, zdravotnického vybavení, výzkumných středisek, protipovodňových opatření atd.; společné řízení přírodních nebo turistických lokalit; rozvoj společných služeb pro místní obyvatelstvo; poradenství v otázkách zaměstnanosti; a vytváření tematických sítí a klastrů pro inovace.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>269062</m:editing-time>
+<m:thinking-time>2712</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="11" m:para-id="11">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:11" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="11" m:created-at="1606126228626" m:created-by="540393" m:modified-at="1606127320016" m:modified-by="540393" m:level-edited="false">
+<source>The funding is granted on condition that organisations from both sides of the border, such as regional authorities, universities and small and medium enterprises, come together to implement projects based on the needs of the border region.</source>
+<target>Podmínkou poskytnutí finančních prostředků je skutečnost, aby organizace na obou stranách hranice (jako jsou regionální orgány, univerzity a malé nebo střední podniky), projekty vyplývající z potřeb daného příhraničního regionu realizovaly společnými silami.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Finanční prostředky jsou poskytovány pod podmínkou, že se organizace z obou stran hranice, jako jsou regionální orgány, univerzity a malé a střední podniky, scházejí, aby prováděly projekty založené na potřebách příhraničního regionu.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>188253</m:editing-time>
+<m:thinking-time>3949</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="12" m:para-id="12">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:12" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="12" m:created-at="1606126262220" m:created-by="540393" m:modified-at="1606127340458" m:modified-by="540393" m:level-edited="false">
+<source>Representatives of cooperating regions, thematic ministries and other local partners meet regularly and decide which projects are going to be supported.</source>
+<target>Zástupci spolupracujících regionů, příslušných ministerstev a dalších místních partnerů se mají pravidelně scházet a rozhodovat o tom, které projekty podpoří.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Zástupci spolupracujících regionů, tematických ministerstev a dalších místních partnerů se pravidelně scházejí a rozhodují o tom, které projekty budou podporovány.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>47332</m:editing-time>
+<m:thinking-time>5415</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="13" m:para-id="13">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:13" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="13" m:created-at="1606126267376" m:created-by="540393" m:modified-at="1606127361316" m:modified-by="540393" m:level-edited="false">
+<source>This unique structure is supposed to lead to sustainable collaboration that continues long after the programme ends.</source>
+<target>Tato jedinečná struktura má vést k udržitelné spolupráci, která bude v dlouhodobém horizontu pokračovat i po skončení programu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Tato jedinečná struktura má vést k udržitelné spolupráci, která pokračuje ještě dlouho po ukončení programu.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>53589</m:editing-time>
+<m:thinking-time>8521</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="14" m:para-id="14">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:14" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="14" m:created-at="1606126386914" m:created-by="540393" m:modified-at="1606127446534" m:modified-by="540393" m:level-edited="false">
+<source>The funding is granted on condition that partners from both sides of the border work together and fulfil at least two of the following conditions: common financing, common staffing, common preparation and common implementation of the project.”</source>
+<target>Podmínkou poskytnutí finančních prostředků je fakt, že budou partneři na obou stranách hranice spolupracovat a splní alespoň dvě z těchto podmínek: společné financování, společný personál, společná příprava a společná realizace projektu.“</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Finanční prostředky se poskytují pod podmínkou, že partneři z obou stran hranice budou spolupracovat a splní alespoň dvě z těchto podmínek: společné financování, společný personál, společná příprava a společné provádění projektu."</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>139748</m:editing-time>
+<m:thinking-time>6962</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="15" m:para-id="15">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:15" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="15" m:created-at="1606126455682" m:created-by="540393" m:modified-at="1606126455831" m:modified-by="540393" m:level-edited="false">
+<source>Within the partnership framework, the tasks and responsibility for preparation, implementation, financing and control of project activities are clearly defined and distributed among the respective partners.</source>
+<target>Úkoly a odpovědnost za přípravu, realizaci, financování a kontrolu projektových činností jsou v rámci partnerství jasně stanoveny a rozděleny mezi příslušné partnery.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>V rámci partnerství jsou úkoly a odpovědnost za přípravu, realizaci, financování a kontrolu projektových činností jasně definovány a rozděleny mezi příslušné partnery.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>68350</m:editing-time>
+<m:thinking-time>19748</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="16" m:para-id="16">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:16" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="16" m:created-at="1606126682894" m:created-by="540393" m:modified-at="1606127479064" m:modified-by="540393" m:level-edited="false">
+<source>The following are main attributes: joint selection of leading partner; joint preparation of project and applications; making of joint agreement of partnership signed by all partners; overtaking of complete responsibility for project implementation by leading partner; total support payments received by leading partner who completes their transfer to respective project partners.</source>
+<target>Ke klíčovým prvkům patří: společný výběr vedoucího partnera, společná příprava projektů a žádostí, společné dohody o partnerství podepsané všemi partnery, převzetí celkové odpovědnosti za realizaci projektu vedoucím partnerem, a také obdržení celkové rozpočtové podpory předním partnerem, který zrealizuje jejich převod ve prospěch příslušných partnerů v rámci projektu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Hlavní atributy jsou následující: společný výběr vedoucího partnera; společná příprava projektů a žádostí; společné dohody o partnerství podepsané všemi partnery; předběhnutí celkové odpovědnosti za realizaci projektu vedoucím partnerem; celkové platby podpory obdržené od předního partnera, který dokončí převod na příslušné partnery projektu.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>233540</m:editing-time>
+<m:thinking-time>16747</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="17" m:para-id="17">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:17" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="17" m:created-at="1606126745488" m:created-by="540393" m:modified-at="1606126745646" m:modified-by="540393" m:level-edited="false">
+<source>The support can be granted to eligible projects implemented in the regions and voivodeships adjacent to the joint border.</source>
+<target>Podporu lze poskytnout způsobilým projektům realizovaným v regionech a okresech sousedících se společnou hranicí.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Podpora může být poskytnuta způsobilým projektům prováděným v regionech a vojvodištím sousedícím se společnou hranicí.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>62062</m:editing-time>
+<m:thinking-time>6917</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="18" m:para-id="18">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:18" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="nt" m:trans-origin-detail="nt_ai" m:confirmed="1" m:locked="false" m:para-id="18" m:created-at="1606126814398" m:created-by="540393" m:modified-at="1606127493145" m:modified-by="540393" m:level-edited="false">
+<source># U této věty je možnost udělat si přestávku mezi překlady. (42)</source>
+<target># U této věty je možnost udělat si přestávku mezi překlady. (42)</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>82355</m:editing-time>
+<m:thinking-time>82236</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="19" m:para-id="19">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:19" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="19" m:created-at="1606127532206" m:created-by="540393" m:modified-at="1606129095205" m:modified-by="540393" m:level-edited="false">
+<source>China Says It Didn't Fight Any War Nor Invaded Foreign Land</source>
+<target>Čína tvrdí, že se nepodílela na válce ani nenapadla cizí zemi</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Čína říká, že neútočila na žádnou válku ani nenapadla cizí zemi</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>45034</m:editing-time>
+<m:thinking-time>9457</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="20" m:para-id="20">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:20" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="20" m:created-at="1606127712998" m:created-by="540393" m:modified-at="1606129147015" m:modified-by="540393" m:level-edited="false">
+<source>China on Friday said it has not provoked a "single war or conflict" or "invaded a single square" of foreign land, skirting any reference to the 1962 war with India.</source>
+<target>Představitelé Číny v pátek uvedli, že země nerozpoutala „žádnou válku ani konflikt“, ani „nevtrhla na žádné území“ cizí země, čímž se vyhnula zmínce o válce s Indií v roce 1962.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Čína v pátek uvedla, že nevyprovokovala „jedinou válku nebo konflikt“ nebo „vtrhla na jediné náměstí“ cizí země, čímž se vyhnula jakémukoli odkazu na válku s Indií v roce 1962.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>208899</m:editing-time>
+<m:thinking-time>18741</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="21" m:para-id="21">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:21" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="21" m:created-at="1606127958263" m:created-by="540393" m:modified-at="1606129190195" m:modified-by="540393" m:level-edited="false">
+<source>"China has always been dedicated to resolving territorial and maritime delimitation disputes through negotiation and consultation," stated an official white paper released, four days ahead of the country set to celebrate its 70th anniversary of the leadership of the ruling Communist Party of China (CPC) on October 1.</source>
+<target>„Čína se vždy snažila řešit spory ohledně vytyčení územních nebo přímořských hranic prostřednictvím vyjednávání a konzultací,“ uvádí oficiální bílá kniha čtyři dny před 1. říjnem, kdy se země chystá oslavit 70. výročí vedení vládnoucí Komunistické strany Číny (KSČ).</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>„Čína se vždy věnovala řešení sporů o územní a námořní vymezení prostřednictvím vyjednávání a konzultací,“ uvedla oficiální bílá kniha vydaná čtyři dny před zemí, která se chystá oslavit 70. výročí vedení vládnoucí Komunistické strany Číny (CPC) ) 1. října.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>282221</m:editing-time>
+<m:thinking-time>5704</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="22" m:para-id="22">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:22" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="22" m:created-at="1606128051103" m:created-by="540393" m:modified-at="1606129225645" m:modified-by="540393" m:level-edited="false">
+<source>"China safeguards world peace through real actions. Over the past 70 years, China has not provoked a single war or conflict, nor invaded a single square of foreign land," the paper titled "China and the World in the New Era" said.</source>
+<target>„Čína chrání světový mír skutečnými činy. Za posledních 70 let Čína nerozpoutala ani jedinou válku nebo konflikt, ani nenapadla jediné území cizí země,“ čteme dále v dokumentu s názvem „Čína ve světě v nové éře“.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>"Čína chrání světový mír skutečnými činy. Za posledních 70 let Čína nevyprovokovala jedinou válku nebo konflikt, ani nenapadla jediné náměstí cizí země," uvádí se v dokumentu s názvem "Čína a svět v nové éře".</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>119473</m:editing-time>
+<m:thinking-time>4877</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="23" m:para-id="23">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:23" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="23" m:created-at="1606128178638" m:created-by="540393" m:modified-at="1606129248068" m:modified-by="540393" m:level-edited="false">
+<source>The white paper, while highlighting the CPS's "peaceful rise" made no reference of the bloody 1962 war with India and the vast tracts of land, especially in the Aksai Chin area, occupied by China.</source>
+<target>Bílá kniha zdůrazňuje „mírumilovný vzestup“ KSČ a vůbec nezmiňuje krvavou válku v roce 1962 s Indií ani rozsáhlá území, zejména v oblasti Aksai Čin, které Čína okupuje.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Bílá kniha, zdůrazňující „mírumilovný vzestup“ CPS, neměla žádný odkaz na krvavou válku z roku 1962 s Indií a rozsáhlé pozemky, zejména v oblasti Aksai Chin, okupované Čínou.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>136109</m:editing-time>
+<m:thinking-time>22210</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="24" m:para-id="24">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:24" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="24" m:created-at="1606128361874" m:created-by="540393" m:modified-at="1606129284475" m:modified-by="540393" m:level-edited="false">
+<source>The Sino-India border dispute involving 3,488-km-long Line of Actual Control (LAC) remained unresolved. China also claims Arunachal Pradesh as part of South Tibet, which India contests.</source>
+<target>Hraniční spor mezi Čínou a Indií, který se týká 3 488 km dlouhé „Linie skutečné kontroly“ (LSK), zatím nebyl vyřešen. Čína také tvrdí, že Arunáčalpradéš je součástí jižního Tibetu, vůči čemu namítá Indie.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Sino-indický hraniční spor zahrnující 3 488 km dlouhou linii skutečné kontroly (LAC) zůstal nevyřešen. Čína také tvrdí, že Arunáčalpradéš je součástí jižního Tibetu, proti kterému Indie protestuje.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>212148</m:editing-time>
+<m:thinking-time>8798</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="25" m:para-id="25">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:25" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="25" m:created-at="1606128395516" m:created-by="540393" m:modified-at="1606129294959" m:modified-by="540393" m:level-edited="false">
+<source>So far, the two countries held 21 rounds of Special Representatives talks to resolve the border dispute.</source>
+<target>Obě země doposud absolvovaly 21 kol jednání zvláštních zástupců s cílem tento hraniční spor vyřešit.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Dosud obě země uspořádaly 21 kol jednání zvláštních zástupců s cílem vyřešit spor o hranice.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>38576</m:editing-time>
+<m:thinking-time>7636</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="26" m:para-id="26">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:26" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="26" m:created-at="1606128455018" m:created-by="540393" m:modified-at="1606128596434" m:modified-by="540393" m:level-edited="false">
+<source>Besides the 1962 war, India and China had a major military standoff at Doklam in 2017 when the People's Liberation Army (PLA) tried to lay a road close to India"s narrow Chicken Neck corridor connecting with the North-Eastern states in an area also claimed by Bhutan.</source>
+<target>Kromě války v roce 1962 došlo v roce 2017 mezi Indií a Čínou v Doklamu k zásadní vojenské potyčce, při které se lidová osvobozenecká armáda (LOA) pokusila vybudovat silnici poblíž úzkého indického Siligurského koridoru spojujícím severovýchodní státy v oblasti, kterou si také nárokuje Bhútán.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Kromě války v roce 1962 měla Indie a Čína v Doklamu zásadní vojenskou situaci v roce 2017, kdy se lidová osvobozenecká armáda (PLA) pokusila položit cestu poblíž úzkého indického koridoru s kuřecím krkem spojujícím severovýchodní státy v oblasti také tvrdí Bhútán.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>197372</m:editing-time>
+<m:thinking-time>9653</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="27" m:para-id="27">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:27" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="27" m:created-at="1606128642786" m:created-by="540393" m:modified-at="1606128642959" m:modified-by="540393" m:level-edited="false">
+<source>It was finally diplomatically resolved after which both sides pulled back their troops.</source>
+<target>Konflikt bylo vyřešen diplomatickou cestou, jakmile obě strany vojska stáhly.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Nakonec to bylo diplomaticky vyřešeno, poté obě strany stáhly svá vojska.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>46102</m:editing-time>
+<m:thinking-time>14302</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="28" m:para-id="28">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:28" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="28" m:created-at="1606128807602" m:created-by="540393" m:modified-at="1606128807996" m:modified-by="540393" m:level-edited="false">
+<source>China also had a major military conflict with Vietnam in 1979. China claims sovereignty over all of South China Sea. Vietnam, Malaysia, the Philippines, Brunei and Taiwan have counter claims.</source>
+<target>Čína byla také v roce 1979 součástí významného vojenského konfliktu s Vietnamem. Země rovněž prohlašuje svrchovanost nad celým Jihočínským moře, vůči čemu namítají Vietnam, Malajsie, Filipíny, Brunej i Tchaj-wan.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Čína měla také velký vojenský konflikt s Vietnamem v roce 1979. Čína se hlásí k suverenitě nad celým Jihočínským mořem. Protipohledávky mají Vietnam, Malajsie, Filipíny, Brunej a Tchaj-wan.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>164565</m:editing-time>
+<m:thinking-time>1082</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="29" m:para-id="29">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:29" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="29" m:created-at="1606129034534" m:created-by="540393" m:modified-at="1606129420505" m:modified-by="540393" m:level-edited="false">
+<source>"China has achieved full resolution of land border delimitation problems with 12 of its 14 neighbouring countries, and delineated the China-Vietnam maritime boundary in the Beibu Gulf," the white paper said, noting that since reform and opening up in 1978, the country has cut its armed forces "by over four million."</source>
+<target>„Čína dosáhla úplného vyřešení problémů s vytyčením územních hranic u 12 ze 14 sousedních zemí a vymezila čínsko-vietnamskou námořní hranici v Tonkinském zálivu,“ uvádí se v bílé knize, kde se dále upozorňuje na to, že od reformace země a jejího otevření v roce 1978 se snížil počet členů armády „o více než čtyři miliony“.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>„Čína dosáhla úplného vyřešení problémů s vymezením pozemních hranic u 12 ze svých 14 sousedních zemí a vymezila čínsko-vietnamskou námořní hranici v zálivu Beibu,“ uvádí se v bílé knize a upozorňuje, že od reformy a otevření v roce 1978 země snížila své ozbrojené síly „o více než čtyři miliony“.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>286636</m:editing-time>
+<m:thinking-time>4920</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="30" m:para-id="30">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:30" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="30" m:created-at="1606129065744" m:created-by="540393" m:modified-at="1606129065901" m:modified-by="540393" m:level-edited="false">
+<source>The two-million strong Chinese military still remain the world's largest.</source>
+<target>Dvoumilionová čínská armáda je i nadále tou největší na světě.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Dvoumilionová čínská armáda stále zůstává největší na světě.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>30714</m:editing-time>
+<m:thinking-time>12580</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="31" m:para-id="31">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:31" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="nt" m:trans-origin-detail="nt_ai" m:confirmed="1" m:locked="false" m:para-id="31" m:created-at="1606129089002" m:created-by="540393" m:modified-at="1606131469979" m:modified-by="540393" m:level-edited="false">
+<source># U této věty je možnost udělat si přestávku mezi překlady. (56)</source>
+<target># U této věty je možnost udělat si přestávku mezi překlady. (56)</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>2071952</m:editing-time>
+<m:thinking-time>2071840</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="32" m:para-id="32">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:32" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="32" m:created-at="1606131585797" m:created-by="540393" m:modified-at="1606132860127" m:modified-by="540393" m:level-edited="false">
+<source>This year's Turner Prize-shortlisted pieces will be on display in Margate from tomorrow, with Brexit on the agenda.</source>
+<target>Letošní užší výběr děl ucházejících se o Turnerovu cenu, která se dotkla i tématu brexitu, bude od zítřka k vidění v anglickém městě Margate.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Letošní kusy Turnerovy ceny budou na obraze v Margate od zítřka, s Brexitem na pořadu jednání.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>166518</m:editing-time>
+<m:thinking-time>16702</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="33" m:para-id="33">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:33" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="33" m:created-at="1606131850365" m:created-by="540393" m:modified-at="1606132953453" m:modified-by="540393" m:level-edited="false">
+<source>Colombian artist Oscar Murillo's work "surge (social cataracts) " depicts people staring out to the North Sea, but with their view of the water and the European continent on the other side of it obscured by a dark canvas, with only a sliver of what lies beyond revealed through a slash in the canvas.</source>
+<target>Dílo kolumbijského výtvarníka Oscara Murilla s názvem „surge (social cataracts)“ zobrazuje postavy sledující Severní moře, jejichž výhled na vodní plochu a evropský kontinent na druhé straně překrývá temné plátno. Co se nachází v dáli odhaluje jenom krátký výřez malířské plochy.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Kolumbijský umělec Oscar Murillo práce „vlna (sociální katarakty)“ zobrazuje lidi, kteří se dívají na Severní moře, ale s jejich výhledem na vodu a evropský kontinent na druhé straně je zakrytý temnou plátnem, jen kousek toho, co je za nimi odhaleno lomítkem na plátně.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>364040</m:editing-time>
+<m:thinking-time>12445</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="34" m:para-id="34">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:34" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="34" m:created-at="1606131946968" m:created-by="540393" m:modified-at="1606132992323" m:modified-by="540393" m:level-edited="false">
+<source>The work is one of four shortlisted entries to the prestigious and often contentious annual art prize, founded in 1984 and given to an artist residing in Britain or British-born but living elsewhere.</source>
+<target>Jedná se o dílo jednoho z uchazečů o prestižní, a často kontroverzní, výroční cenu za umění, která se uděluje od roku 1984 umělcům s bydlištěm v Británii nebo britským rodákům žijícím v zahraničí.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Práce je jedním ze čtyř krátkých vstupů do prestižní a často sporné výroční ceny umění, která byla založena v roce 1984 a dána umělci s bydlištěm v Británii nebo v Británii, ale žije jinde.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>123851</m:editing-time>
+<m:thinking-time>4717</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="35" m:para-id="35">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:35" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="35" m:created-at="1606132149606" m:created-by="540393" m:modified-at="1606133044028" m:modified-by="540393" m:level-edited="false">
+<source>Curator Fiona Parry explains that Murillo's work focuses on the current political and socio-economic situation in the UK. The group of papier-mâché figures represent a globalised workforce, while the black cloth represents the "darkness of the contemporary moment in the UK and globally."</source>
+<target>Kurátorka Fiona Parryová vysvětluje, že Murillovo dílo odráží současnou politickou a sociálně-ekonomickou situaci ve Velké Británii. Skupina postav z papírové hmoty představuje globalizovanou pracovní sílu, zatímco černá látka zase „temnou současnost ve Spojeném království i na celém světě“.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Kurátorka Fiona Parry vysvětluje, že Murillova práce se zaměřuje na současnou politickou a sociálně-ekonomickou situaci ve Spojeném království. Skupina postav papier-mâché představuje globalizovanou pracovní sílu, zatímco černá látka představuje „temnotu současného momentu ve Velké Británii a na celém světě“.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>236564</m:editing-time>
+<m:thinking-time>3914</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="36" m:para-id="36">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:36" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="36" m:created-at="1606132340070" m:created-by="540393" m:modified-at="1606141862179" m:modified-by="540393" m:level-edited="false">
+<source>She added: "I think it's a broader idea of blocking the view, the outward-looking view, to anywhere really. And that gesture of blocking the light. But I guess there is still this sort of glimmer of hope, there is a slash in the canvas, and you can just see the sea on the horizon."</source>
+<target>Dodává: „Myslím, že myšlenka překážky ve výhledu, zejména směrem ven, je obecnější ideou, kterou lze vztáhnout k jakémukoliv místu na světě. To platí i pro smysl zaclonění světla. Domnívám se ale, že na plátně vidět i záblesk naděje tam, kde na obzoru prosvítá moře“.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Dodala: „Myslím, že je to širší nápad, jak zablokovat výhled, pohled zevnějšku, kdekoliv doopravdy. A to gesto blokování světla. Ale myslím, že stále ještě existuje takový záblesk naděje, v plátně je průlom a na obzoru je vidět moře.“</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>321253</m:editing-time>
+<m:thinking-time>22761</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="37" m:para-id="37">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:37" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="37" m:created-at="1606132356764" m:created-by="540393" m:modified-at="1606133230337" m:modified-by="540393" m:level-edited="false">
+<source>Helen Cammock's video piece A Long Note, meanwhile, examines the overlooked role of women in the civil rights movement in Derry/Londonderry, Northern Ireland that began in 1968. The work also connects to broader global class, race and gender struggles during the late 1960s.</source>
+<target>Dílo Helen Cammockové „A Long Note“ ve formě videa zase zkoumá nedoceněnou úlohu žen v rámci hnutí za občanská práva v Derry (Londonderry) v Severním Irsku, která započala činnost v roce 1968. Video se také v širším měřítku řadí k třídním, rasovým a genderovým bojům koncem 60. let 20. století po celém světě.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Videoklip Helen Cammockové A Long Note zatím zkoumá přehlíženou roli žen v pohybu občanských práv v Derry/Londonderry v Severním Irsku, která začala v roce 1968. Práce také spojuje širší globální třídu, rasové a genderové zápasy na konci 60. let.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>299272</m:editing-time>
+<m:thinking-time>12129</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="38" m:para-id="38">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:38" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="38" m:created-at="1606132672773" m:created-by="540393" m:modified-at="1606133244464" m:modified-by="540393" m:level-edited="false">
+<source>All works will be exhibited at Margate's Turner Contemporary gallery, from 28 September to 12 January 2020, and the winner of the Turner Prize 2019 will be announced at a ceremony on 3 December.</source>
+<target>Všechna díla budou vystavena v galerii Turner Contemporary v anglickém Margate od 28. září do 12. ledna 2020. Vítěz Turnerovy ceny za rok 2019 bude vyhlášen na slavnostním ceremoniálu 3. prosince.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Všechny práce budou vystaveny na Margate's Turner Contemporary galerii od 28. září do 12. ledna 2020 a vítěz Turnerovy ceny 2019 bude vyhlášen na slavnostním ceremoniálu dne 3. prosince.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>99939</m:editing-time>
+<m:thinking-time>10677</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="39" m:para-id="39">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:39" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="39" m:created-at="1606132808272" m:created-by="540393" m:modified-at="1606133291887" m:modified-by="540393" m:level-edited="false">
+<source>Named after 19th-century landscape painter JMW Turner, the award made stars of Grayson Perry, Damien Hirst and 12 Years a Slave director Steve McQueen.</source>
+<target>Cena byla pojmenována po mistrovi krajinomalby 19. století J.M.W. Turnerovi. Pomohla proslavit výtvarníky Graysona Perryho, Damiena Hirsta nebo režiséra snímku „12 let v řetězech“ Stevea McQueena.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Cena byla pojmenována po malíři krajiny JMW Turnerovi z 19. století a stala se hvězdami Graysona Perryho, Damiena Hirsta a 12 let Slavnostního režiséra Steva McQueena.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>182082</m:editing-time>
+<m:thinking-time>5384</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="40" m:para-id="40">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:40" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="nt" m:trans-origin-detail="nt_ai" m:confirmed="1" m:locked="false" m:para-id="40" m:created-at="1606133409239" m:created-by="540393" m:modified-at="1606141768605" m:modified-by="540393" m:level-edited="false">
+<source># U této věty je možnost udělat si přestávku mezi překlady. (112)</source>
+<target># U této věty je možnost udělat si přestávku mezi překlady. (112)</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>121487</m:editing-time>
+<m:thinking-time>121361</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="41" m:para-id="41">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:41" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="41" m:created-at="1606133413345" m:created-by="540393" m:modified-at="1606133413592" m:modified-by="540393" m:level-edited="false">
+<source>RECOMMENDATIONS</source>
+<target>DOPORUČENÍ</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>DOPORUČENÍ</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>4010</m:editing-time>
+<m:thinking-time>3161</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="42" m:para-id="42">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:42" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="42" m:created-at="1606133539250" m:created-by="540393" m:modified-at="1606133757139" m:modified-by="540393" m:level-edited="false">
+<source>A common recommendation of the NKU and the NIK concerns an improvement of the monitoring system specifically by consistent assignation of proper monitoring indicators for all specific objectives of priority axis of the Operational Programme.</source>
+<target>NKÚ společně s NIK doporučují zlepšení monitorovacího systému, zejména jednotným přiřazováním vhodných monitorovacích ukazatelů pro všechny specifické cíle prioritní osy operačního programu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Společné doporučení NKÚ a NIK se týká zlepšení monitorovacího systému zejména důsledným přidělováním řádných monitorovacích ukazatelů pro všechny specifické cíle prioritní osy operačního programu.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>170559</m:editing-time>
+<m:thinking-time>3781</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="43" m:para-id="43">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:43" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="43" m:created-at="1606133610165" m:created-by="540393" m:modified-at="1606133610362" m:modified-by="540393" m:level-edited="false">
+<source>Generally, it is also necessary to aim for designing monitoring indicators both on the programme and project level which would enable more operative verification of the achievement of set effects.</source>
+<target>Obecně je také nutné zaměřit se na vytvoření monitorovacích ukazatelů na úrovni programu i jednotlivých projektů, které umožní operativnější ověřování dosažení stanovených výsledků.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Obecně je také nutné zaměřit se na vytvoření ukazatelů monitorování jak na úrovni programu, tak na úrovni projektů, které by umožnily operativnější ověření dosažení stanovených účinků.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>70356</m:editing-time>
+<m:thinking-time>1677</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="44" m:para-id="44">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:44" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="44" m:created-at="1606133650052" m:created-by="540393" m:modified-at="1606133807777" m:modified-by="540393" m:level-edited="false">
+<source>Remarks and recommendations resulting from the audits carried out on both sides of the border are included in the separate audit reports of NKU and NIK on CD.</source>
+<target>Poznámky a doporučení vyplývající z auditů provedených na obou stranách hranice jsou uvedeny v samostatných auditních zprávách NKÚ a NIK na CD.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Poznámky a doporučení vyplývající z auditů provedených na obou stranách hranice jsou obsaženy v samostatných auditních zprávách NKU a NIK na CD.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>63694</m:editing-time>
+<m:thinking-time>3234</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="45" m:para-id="45">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:45" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="45" m:created-at="1606133681123" m:created-by="540393" m:modified-at="1606133701180" m:modified-by="540393" m:level-edited="false">
+<source>COMMUNIQUÉ</source>
+<target>PROHLÁŠENÍ</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>COMMUNIQUÉ</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>32317</m:editing-time>
+<m:thinking-time>13406</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="46" m:para-id="46">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:46" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="46" m:created-at="1606133699404" m:created-by="540393" m:modified-at="1606133812444" m:modified-by="540393" m:level-edited="false">
+<source>The report has been drawn up in Czech, English and Polish and signed by the Presidents of supreme audit institutions of the Czech Republic and Poland.</source>
+<target>Zpráva byla vypracována v českém, anglickém a polském jazyce a podepsána předsedy nejvyšších kontrolních institucí České republiky a Polska.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Zpráva byla vypracována v českém, anglickém a polském jazyce a podepsána předsedy nejvyšších kontrolních institucí České republiky a Polska.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>22478</m:editing-time>
+<m:thinking-time>7576</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="47" m:para-id="47">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:47" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="nt" m:trans-origin-detail="nt_ai" m:confirmed="1" m:locked="false" m:para-id="47" m:created-at="1606133977692" m:created-by="540393" m:modified-at="1606141770241" m:modified-by="540393" m:level-edited="false">
+<source># U této věty je možnost udělat si přestávku mezi překlady. (84)</source>
+<target># U této věty je možnost udělat si přestávku mezi překlady. (84)</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>166652</m:editing-time>
+<m:thinking-time>166506</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="48" m:para-id="48">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:48" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="48" m:created-at="1606133989802" m:created-by="540393" m:modified-at="1606133989986" m:modified-by="540393" m:level-edited="false">
+<source>Supplement No. 1 to the agreement on the sublease the apartment, of 13th May 2016</source>
+<target>Dodatek č. 1 ke Smlouvě o podnájmu bytu ze dne 13. května 2016</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Dodatek č. 1 ke Smlouvě o podnájmu bytu ze dne 13. května 2016</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>12043</m:editing-time>
+<m:thinking-time>6191</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="49" m:para-id="49">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:49" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="49" m:created-at="1606134148376" m:created-by="540393" m:modified-at="1606134148582" m:modified-by="540393" m:level-edited="false">
+<source>On the day, month and year written below Marta Burešová, pers. no. 695604/3017 Address: Radimova 8, Prague 6, 169 00 as the tenant on the one hand (Hereinafter referred to as "the tenant") and Karolína Černá, pers. no. 136205/891 Address: Alfrédova 13, Praha 4, 142 00 As a lessee on the other (Hereinafter referred to as "the lessee") collectively also referred to as "the Contracting parties" have agreed on this Supplement No. 1 to the Agreement on the sublease the apartment, of 13th May 2016 (hereinafter referred to as the "Supplement No. 1")</source>
+<target>Níže uvedeného dne, měsíce a roku uzavírají Marta Burešová, r. č. 695604/3017, bytem: Radimova 8, 169 00 Praha 6, jako nájemkyně na straně jedné (dále jen „nájemkyně“) a Karolína Černá, r. č. 136205/891, bytem: Alfrédova 13, 142 00 Praha 4, jako podnájemkyně na straně druhé (dále jen „podnájemkyně“), společně dále také jako „smluvní strany“, tento Dodatek č. 1 ke Smlouvě o podnájmu bytu ze dne 13. května 2016 (dále jen jako „Dodatek č. 1“).</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Níže uvedeného dne, měsíce a roku uzavírají Marta Burešová, r. č. 695604/3017 bytem: Radimova 8, Praha 6, PSČ: 169 00 jako nájemkyně na straně jedné (dále jen "nájemkyně") a Karolína Černá, r. č. 136205/891 bytem: Alfrédova 13, Praha 4, PSČ: 142 00 jako podnájemkyně na straně druhé (dále jen "podnájemkyně") společně dále také jako „smluvní strany“ tento Dodatek č. 1 ke Smlouvě o podnájmu bytu ze dne 13. května 2016 (dále jen jako „Dodatek č. 1“)</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>158338</m:editing-time>
+<m:thinking-time>3865</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="50" m:para-id="50">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:50" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="50" m:created-at="1606134151989" m:created-by="540393" m:modified-at="1606134152201" m:modified-by="540393" m:level-edited="false">
+<source>I.</source>
+<target>I.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>I.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>2429</m:editing-time>
+<m:thinking-time>2309</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="51" m:para-id="51">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:51" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="51" m:created-at="1606134154598" m:created-by="540393" m:modified-at="1606134154810" m:modified-by="540393" m:level-edited="false">
+<source>Introductory Provisions</source>
+<target>Úvodní ustanovení</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Úvodní ustanovení</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>2536</m:editing-time>
+<m:thinking-time>2415</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="52" m:para-id="52">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:52" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="52" m:created-at="1606134273191" m:created-by="540393" m:modified-at="1606134819327" m:modified-by="540393" m:level-edited="false">
+<source>On 13th May 2016, the tenant and the lessee closed the Agreement on the sublease of the apartment, under which the tenant let the lessee use the apartment No. 4 (area 49 m²) of size 1+1/L in the ground floor of the house in Prague 4, Alfrédova 13, Post Code: 142 00, Kamýk (hereinafter referred to as the “apartment in question” and “Sublease agreement”), including the equipment and amenities as specified in the Sublease agreement.</source>
+<target>Dne 13. května 2016 byla mezi nájemkyní na straně jedné a podnájemkyní na straně druhé uzavřena Smlouva o podnájmu bytu, na základě které nájemkyně přenechala podnájemkyni do užívání byt č. 4 (s výměrou 49 m²) o velikosti 1+1/L v 1. nadzemním podlaží domu na adrese Alfrédova 13, 142 00 Praha 4, k. ú. Kamýk (dále jako „předmětný byt“ a „Smlouva o podnájmu bytu“), a to včetně ve Smlouvě o podnájmu bytu blíže specifikovaného vybavení a příslušenství.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Dne 13. května 2016 byla mezi nájemkyní na straně jedné a podnájemkyní na straně druhé uzavřena Smlouva o podnájmu bytu, na základě které nájemkyně přenechala podnájemkyni do užívání byt č. 4 (výměra 49 m²) o velikosti 1+1/L v 1. nadzemním podlaží domu v Praze 4, Alfrédova 13, PSČ: 142 00, k. ú. Kamýk (dále též "předmětný byt" a dále jen jako „Smlouva o podnájmu bytu“), a to včetně ve Smlouvě o podnájmu bytu blíže specifikovaného vybavení a příslušenství.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>126807</m:editing-time>
+<m:thinking-time>3125</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="53" m:para-id="53">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:53" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="53" m:created-at="1606134360200" m:created-by="540393" m:modified-at="1606141897274" m:modified-by="540393" m:level-edited="false">
+<source>The owner of the flat in question is a housing cooperative "Team of Owners of House Alfrédova 13, Prague 4", ID: 123 45 678, with registered office at Prague 4, Alfrédova 13, postal code: 142 00 (hereinafter referred to as “Housing Cooperative”).</source>
+<target>Vlastníkem předmětného bytu je „Bytové družstvo Alfrédova 13“, IČ: 123 45 678, se sídlem na adrese Alfrédova 13, 142 00 Praha 4 (dále jen „bytové družstvo“).</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Vlastníkem předmětného bytu je bytové družstvo „Bytové družstvo Alfrédova 13“, IČ: 123 45 678, se sídlem v Praze 4, Kamýk, Alfrédova 13, PSČ: 142 00 (dále jen "Bytové družstvo").</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>103040</m:editing-time>
+<m:thinking-time>24980</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="54" m:para-id="54">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:54" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="54" m:created-at="1606134387689" m:created-by="540393" m:modified-at="1606134388700" m:modified-by="540393" m:level-edited="false">
+<source>On the basis of the statement made by the tenant in the Sublease agreement, the tenant's husband (Mr. Martin Bureš, pers. no.: 760305/3920) expressed his agreement to the conclusion of the Sublease agreement for the apartment before signing the Sublease agreement.</source>
+<target>Na základě prohlášení učiněného nájemkyní ve Smlouvě o podnájmu bytu vyjádřil manžel nájemkyně (pan Martin Bureš, r. č.: 760305/3920) před podpisem Smlouvy o podnájmu bytu svůj souhlas s uzavřením Smlouvy o podnájmu bytu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Na základě prohlášení učiněného nájemkyní ve Smlouvě o podnájmu bytu vyjádřil manžel nájemkyně (pan Martin Bureš, r. č.: 760305/3920) před podpisem Smlouvy o podnájmu bytu svůj souhlas s uzavřením Smlouvy o podnájmu bytu.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>26758</m:editing-time>
+<m:thinking-time>1531</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="55" m:para-id="55">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:55" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="55" m:created-at="1606134419820" m:created-by="540393" m:modified-at="1606134420028" m:modified-by="540393" m:level-edited="false">
+<source>By signing this Supplement No. 1, the tenant then declares that her husband has also given his consent to this Supplement No. 1.</source>
+<target>Nájemkyně podpisem tohoto Dodatku č. 1 pak prohlašuje, že její manžel vyjádřil souhlas i s tímto Dodatkem č. 1.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Nájemkyně podpisem tohoto Dodatku č. 1 pak prohlašuje, že i s tímto Dodatkem č. 1 vyjádřil její manžel souhlas.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>31302</m:editing-time>
+<m:thinking-time>2569</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="56" m:para-id="56">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:56" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="56" m:created-at="1606134452020" m:created-by="540393" m:modified-at="1606134452232" m:modified-by="540393" m:level-edited="false">
+<source>In Art. III of the Sublease agreement, entitled “Term of the Lease,” the tenant and the lessee agreed that the apartment in question would be rented to the tenant for a fixed period from 13th May 2016 to 31st December 2018.</source>
+<target>V čl. III Smlouvy o podnájmu bytu, nazvaném „Doba podnájmu“, se nájemkyně a podnájemkyně dohodly, že předmětný byt bude podnájemkyni přenechán k užívání na dobu určitou od 13. 5. 2016 do 31. 12. 2018.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>V čl. III Smlouvy o podnájmu bytu, nazvaném „Doba podnájmu“, se nájemkyně a podnájemkyně dohodly, že předmětný byt bude podnájemkyni přenechán k užívání na dobu určitou od 13. 5. 2016 do 31. 12. 2018.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>31810</m:editing-time>
+<m:thinking-time>2588</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="57" m:para-id="57">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:57" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="57" m:created-at="1606134453495" m:created-by="540393" m:modified-at="1606134453714" m:modified-by="540393" m:level-edited="false">
+<source>II.</source>
+<target>II.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>II.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>927</m:editing-time>
+<m:thinking-time>822</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="58" m:para-id="58">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:58" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="58" m:created-at="1606134455832" m:created-by="540393" m:modified-at="1606134456035" m:modified-by="540393" m:level-edited="false">
+<source>Subject of the Supplement No. 1</source>
+<target>Předmět Dodatku č. 1</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Předmět Dodatku č. 1</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>2262</m:editing-time>
+<m:thinking-time>2140</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="59" m:para-id="59">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:59" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="59" m:created-at="1606134548361" m:created-by="540393" m:modified-at="1606134883022" m:modified-by="540393" m:level-edited="false">
+<source>Since both Contracting parties are interested in continuing the relationship established by the Sublease agreement, they have agreed to extend the lease for a further two years, i.e. the lessee is entitled to use the apartment until 31st December 2020.</source>
+<target>Vzhledem k tomu, že obě smluvní strany mají zájem o další trvání vztahu na základě Smlouvy o nájmu bytu, dohodly se prodloužení nájmu o další dva roky, tj. podnájemkyně je oprávněna předmětný byt užívat až do 31. 12. 2020 včetně.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Vzhledem k tomu, že obě smluvní strany mají zájem na dalším trvání vztahu založeného Smlouvou o nájmu bytu, dohodly se prodloužení nájmu o další dva roky, tj. nájemkyně je oprávněna předmětný byt užívat až do 31. 12. 2020 včetně.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>97223</m:editing-time>
+<m:thinking-time>14704</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="60" m:para-id="60">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:60" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="60" m:created-at="1606134556632" m:created-by="540393" m:modified-at="1606134556838" m:modified-by="540393" m:level-edited="false">
+<source>The other provisions of the Sublease agreement remain unchanged.</source>
+<target>Ostatní ustanovení Smlouvy o nájmu bytu zůstávají nezměněna.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Ostatní ustanovení Smlouvy o nájmu bytu zůstávají nezměněna.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>7556</m:editing-time>
+<m:thinking-time>1372</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="61" m:para-id="61">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:61" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="61" m:created-at="1606134557737" m:created-by="540393" m:modified-at="1606134557959" m:modified-by="540393" m:level-edited="false">
+<source>III.</source>
+<target>III.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>III.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>784</m:editing-time>
+<m:thinking-time>678</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="62" m:para-id="62">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:62" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="62" m:created-at="1606134558841" m:created-by="540393" m:modified-at="1606134559044" m:modified-by="540393" m:level-edited="false">
+<source>Final Provisions</source>
+<target>Závěrečná ustanovení</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Závěrečná ustanovení</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>997</m:editing-time>
+<m:thinking-time>892</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="63" m:para-id="63">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:63" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="63" m:created-at="1606134568159" m:created-by="540393" m:modified-at="1606134568361" m:modified-by="540393" m:level-edited="false">
+<source>This Supplement No. 1 shall take effect on the date of signature by both Contracting parties.</source>
+<target>Tento Dodatek č. 1 nabývá platnosti a účinnosti dnem podpisu oběma smluvními stranami.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Tento Dodatek č. 1 nabývá platnosti a účinnosti dnem podpisu oběma smluvními stranami.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>9228</m:editing-time>
+<m:thinking-time>1708</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="64" m:para-id="64">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:64" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="64" m:created-at="1606134580487" m:created-by="540393" m:modified-at="1606134580696" m:modified-by="540393" m:level-edited="false">
+<source>This Supplement No. 1 is written and signed in 2 (in words: two) copies, each of which is valid for the original.</source>
+<target>Tento Dodatek č. 1 je sepsán a podepsán ve 2 (slovy: dvou) stejnopisech, z nichž každý má platnost originálu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Tento Dodatek č. 1 je sepsán a podepsán ve 2 (slovy: dvou) stejnopisech, z nichž každý má platnost originálu.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>12042</m:editing-time>
+<m:thinking-time>3681</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="65" m:para-id="65">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:65" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="65" m:created-at="1606134583351" m:created-by="540393" m:modified-at="1606134583562" m:modified-by="540393" m:level-edited="false">
+<source>Each of the Contracting parties shall receive one copy.</source>
+<target>Každá smluvní strana obdrží jeden stejnopis.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Každá smluvní strana obdrží jeden stejnopis.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>2565</m:editing-time>
+<m:thinking-time>2462</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="66" m:para-id="66">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:66" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="66" m:created-at="1606134642039" m:created-by="540393" m:modified-at="1606134642270" m:modified-by="540393" m:level-edited="false">
+<source>In the event that any provision of this Supplement No. 1 is or it becomes invalid or ineffective, this shall not affect the validity or effectiveness of the other provisions of this Supplement No. 1.</source>
+<target>V případě, že je některé ustanovení tohoto Dodatku č. 1 neplatné nebo neúčinné, nebo se takovým stane, není tím dotčena platnost ani účinnost ostatních ustanovení tohoto Dodatku č. 1.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>V případě, že některé ustanovení tohoto Dodatku č. 1 je, či se stane neplatným nebo neúčinným, není tím dotčena platnost ani účinnost ostatních ustanovení tohoto Dodatku č. 1.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>58512</m:editing-time>
+<m:thinking-time>3335</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="67" m:para-id="67">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:67" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="67" m:created-at="1606134657448" m:created-by="540393" m:modified-at="1606134657686" m:modified-by="540393" m:level-edited="false">
+<source>In such a case, the Contracting parties undertake to replace the invalid or ineffective provisions of this Supplement No. 1 by a provision which is valid and effective and which is most consistent with the purpose of this Supplement No. 1.</source>
+<target>Smluvní strany se v takovém případě zavazují nahradit neplatné nebo neúčinné ustanovení tohoto Dodatku č. 1 ustanovením platným a účinným, které bude nejvíce odpovídat účelu tohoto Dodatku č. 1.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Smluvní strany se v takovém případě zavazují nahradit neplatné nebo neúčinné ustanovení tohoto Dodatku č. 1 ustanovením platným a účinným, které bude nejvíce odpovídat účelu tohoto Dodatku č. 1.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>14878</m:editing-time>
+<m:thinking-time>5174</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="68" m:para-id="68">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:68" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="68" m:created-at="1606134679754" m:created-by="540393" m:modified-at="1606134679965" m:modified-by="540393" m:level-edited="false">
+<source>The Supplement No. 1 is bilingual.</source>
+<target>Dodatek č. 1 je vyhotoven dvojjazyčně.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Dodatek je dvojjazyčný.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>21774</m:editing-time>
+<m:thinking-time>3266</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="69" m:para-id="69">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:69" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="69" m:created-at="1606134684425" m:created-by="540393" m:modified-at="1606134924605" m:modified-by="540393" m:level-edited="false">
+<source>In the event of a dispute, the Czech version is decisive.</source>
+<target>V případě sporu rozhoduje česká verze.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>V případě sporu je rozhodující česká verze.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>9868</m:editing-time>
+<m:thinking-time>4474</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="70" m:para-id="70">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:70" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="70" m:created-at="1606134741720" m:created-by="540393" m:modified-at="1606134957786" m:modified-by="540393" m:level-edited="false">
+<source>The Contracting parties to this Supplement No. 1 declare that they have read the Supplement No. 1, agree with its contents and that the Supplement No. 1 was concluded freely, seriously, not in distress, under considerably unfavorable conditions.</source>
+<target>Smluvní strany prohlašují, že si Dodatek č. 1 přečetly, že s jeho obsahem souhlasí a že Dodatek č. 1 byl uzavřen svobodně, ve vší vážnosti, nikoliv v tísni za značně nevýhodných podmínek.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Smluvní strany prohlašují, že si Dodatek č. 1 přečetly, že s jeho obsahem souhlasí a že Dodatek č. 1 byl uzavřen svobodně, vážně, nikoliv v tísni za nápadně nevýhodných podmínek.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>71286</m:editing-time>
+<m:thinking-time>1810</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="71" m:para-id="71">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:71" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="71" m:created-at="1606134756648" m:created-by="540393" m:modified-at="1606134756863" m:modified-by="540393" m:level-edited="false">
+<source>In proof of these facts, both parties to this Agreement shall attach their handwritten signature.</source>
+<target>Na důkaz těchto skutečností připojují smluvní strany této Smlouvy svůj vlastnoruční podpis.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Na důkaz těchto skutečností připojují účastníci této Smlouvy svůj vlastnoruční podpis.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>14215</m:editing-time>
+<m:thinking-time>1390</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="72" m:para-id="72">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:72" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="72" m:created-at="1606134759639" m:created-by="540393" m:modified-at="1606134759855" m:modified-by="540393" m:level-edited="false">
+<source>Prague, 31st December 2018.</source>
+<target>V Praze, 31. 12. 2018.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>V Praze, 31. 12. 2018.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>2602</m:editing-time>
+<m:thinking-time>2514</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="73" m:para-id="73">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:73" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="73" m:created-at="1606134761031" m:created-by="540393" m:modified-at="1606134761298" m:modified-by="540393" m:level-edited="false">
+<source>.....................</source>
+<target>.....................</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>.....................</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>1256</m:editing-time>
+<m:thinking-time>1039</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="74" m:para-id="74">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:74" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="74" m:created-at="1606134763916" m:created-by="540393" m:modified-at="1606134764131" m:modified-by="540393" m:level-edited="false">
+<source>Karolína Černá, Lessee</source>
+<target>Karolína Černá, podnájemkyně</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Karolína Černá, podnájemkyně</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>2751</m:editing-time>
+<m:thinking-time>2577</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="75" m:para-id="75">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:75" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="75" m:created-at="1606139334430" m:created-by="540393" m:modified-at="1606139334673" m:modified-by="540393" m:level-edited="false">
+<source>.....................</source>
+<target>.....................</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>.....................</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>0</m:editing-time>
+<m:thinking-time>0</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="76" m:para-id="76">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:76" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="76" m:created-at="1606134810746" m:created-by="540393" m:modified-at="1606134970499" m:modified-by="540393" m:level-edited="false">
+<source>Marta Burešová, Tenant</source>
+<target>Marta Burešová, nájemkyně</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Marta Burešová, nájemkyně</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>58747</m:editing-time>
+<m:thinking-time>58643</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="77" m:para-id="77">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:77" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="nt" m:trans-origin-detail="nt_ai" m:confirmed="1" m:locked="false" m:para-id="77" m:created-at="1606137991401" m:created-by="540393" m:modified-at="1606137991684" m:modified-by="540393" m:level-edited="false">
+<source># U této věty je možnost udělat si přestávku mezi překlady. (28)</source>
+<target># U této věty je možnost udělat si přestávku mezi překlady. (28)</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>3020898</m:editing-time>
+<m:thinking-time>3020626</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="78" m:para-id="78">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:78" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="78" m:created-at="1606138199662" m:created-by="540393" m:modified-at="1606138210290" m:modified-by="540393" m:level-edited="false">
+<source>Why The Times Published Details of the Whistle-Blower's Identity</source>
+<target>Proč deník The Times zveřejnil podrobnosti o identitě informátora</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Proč The Times zveřejnily podrobnosti o identitě Whistle-Blowera</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>213385</m:editing-time>
+<m:thinking-time>5112</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="79" m:para-id="79">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:79" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="79" m:created-at="1606138204309" m:created-by="540393" m:modified-at="1606138374367" m:modified-by="540393" m:level-edited="false">
+<source>On Thursday, The Times published exclusive details about the identity of the whistle-blower whose claims led Democrats to begin an impeachment inquiry against President Trump this week. (The article reported that the whistle-blower is a C.I.A. officer who was previously detailed to work at the White House and had expertise on Ukraine.)</source>
+<target>Deník The Times ve čtvrtek zveřejnil exkluzivní podrobnosti o totožnosti informátora, jehož tvrzení přivedla tento týden demokraty k zahájení vyšetřování obvinění prezidenta Trumpa z velezrady. (Dle článku byl whistleblowerem důstojník CIA, který byl dříve pověřen prací v Bílém domě a má odborné znalosti o Ukrajině.)</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Deník The Times ve čtvrtek zveřejnil exkluzivní podrobnosti o totožnosti udavače, jehož tvrzení vedla demokraty tento týden k zahájení vyšetřování obvinění prezidenta Trumpa z velezrady. (Článek uváděl, že udavačem je důstojník CIA, který byl dříve pověřen prací v Bílém domě a měl odborné znalosti o Ukrajině.)</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>168073</m:editing-time>
+<m:thinking-time>2800</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="80" m:para-id="80">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:80" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="80" m:created-at="1606138468390" m:created-by="540393" m:modified-at="1606138970203" m:modified-by="540393" m:level-edited="false">
+<source>Many readers, including some who work in national security and intelligence, have criticized The Times's decision to publish the details, saying it potentially put the person's life in danger and may have a chilling effect on would-be whistle-blowers.</source>
+<target>Mnoho čtenářů, včetně těch, kteří pracují pro národní bezpečnost a rozvědku, kritizovalo rozhodnutí The Times zveřejnit podrobnosti s tím, že by to mohlo ohrozit přežití daného člověka a odradit další případné oznamovatele.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Mnoho čtenářů, včetně těch, kteří pracují pro národní bezpečnost a rozvědku, kritizovalo Rozhodnutí Timesů zveřejnit podrobnosti s tím, že by to mohlo ohrozit život této osoby a mohlo by to mít mrazivý dopad na případné udavače.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>119749</m:editing-time>
+<m:thinking-time>5848</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="81" m:para-id="81">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:81" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="81" m:created-at="1606138474514" m:created-by="540393" m:modified-at="1606141918248" m:modified-by="540393" m:level-edited="false">
+<source>We took their concerns to Dean Baquet, The Times's executive editor, who responded to them in a discussion with the Reader Center:</source>
+<target>Tyto obavy jsme sdělili Deanu Baquetovi, výkonnému editorovi The Times, který na ně reagoval v diskusi v sekci Centrum čtenářů (Reader Center):</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Jejich obavy jsme sdělili Deanu Baquetovi, výkonnému redaktorovi The Times, který na ně reagoval v diskusi s redakcí Reader Center:</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>90427</m:editing-time>
+<m:thinking-time>21718</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="82" m:para-id="82">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:82" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="82" m:created-at="1606138617513" m:created-by="540393" m:modified-at="1606139025656" m:modified-by="540393" m:level-edited="false">
+<source>The president and some of his supporters have attacked the credibility of the whistle-blower, who has presented information that has touched off a landmark impeachment proceeding. The president himself has called the whistle-blower's account a "political hack job."</source>
+<target>Prezident společně s několika příznivci zpochybnili důvěryhodnost whistleblowera, který předložil informace ohledně historického procesu obžaloby z velezrady. Samotný prezident označil účet informátora za „dílo politického hackerství“.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Prezident a někteří jeho příznivci napadli důvěryhodnost udavače, který předložil informace, jež se dotkly přelomového procesu obžaloby z velezrady. Sám prezident označil udavačův účet za „politickou loupež“.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>266316</m:editing-time>
+<m:thinking-time>96108</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="83" m:para-id="83">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:83" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="83" m:created-at="1606138893049" m:created-by="540393" m:modified-at="1606139057097" m:modified-by="540393" m:level-edited="false">
+<source>We decided to publish limited information about the whistle-blower - including the fact that he works for a nonpolitical agency and that his complaint is based on an intimate knowledge and understanding of the White House - because we wanted to provide information to readers that allows them to make their own judgments about whether or not he is credible.</source>
+<target>Rozhodli jsme se zveřejnit částečné informace o oznamovateli – včetně skutečnosti, že pracuje pro nepolitickou agenturu a že jeho stížnost vychází z důvěrné znalosti a porozumění Bílého domu – protože jsme chtěli poskytnout čtenářům informace, které jim umožní vytvořit si vlastní úsudek o jeho důvěryhodnosti.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Rozhodli jsme se zveřejnit omezené informace o udavači – včetně skutečnosti, že pracuje pro nepolitickou agenturu a že jeho stížnost je založena na důvěrné znalosti a porozumění Bílého domu – protože jsme chtěli poskytnout informace čtenářům, které jim umožní udělat si vlastní úsudek o tom, zda je či není důvěryhodný.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>121048</m:editing-time>
+<m:thinking-time>4034</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="84" m:para-id="84">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:84" xml:space="preserve" m:score="0.99" m:gross-score="0.99" m:trans-origin="nt" m:trans-origin-detail="nt_ai" m:confirmed="1" m:locked="false" m:para-id="84" m:created-at="1606138949922" m:created-by="540393" m:modified-at="1606139320135" m:modified-by="540393" m:level-edited="false">
+<source># U této věty je možnost udělat si přestávku mezi překlady. (70)</source>
+<target># U této věty je možnost udělat si přestávku mezi překlady. (70)</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>317685</m:editing-time>
+<m:thinking-time>317585</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="85" m:para-id="85">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:85" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="85" m:created-at="1606139442112" m:created-by="540393" m:modified-at="1606140064620" m:modified-by="540393" m:level-edited="false">
+<source>Try installing the drivers of the USB wireless modem from the CD</source>
+<target>Pomocí CD si nainstalujte si ovladače k bezdrátovému USB modemu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>89506</m:editing-time>
+<m:thinking-time>21351</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="86" m:para-id="86">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:86" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="86" m:created-at="1606139478181" m:created-by="540393" m:modified-at="1606140093968" m:modified-by="540393" m:level-edited="false">
+<source>Check the settings on your account for blocked contacts.</source>
+<target>Zkontrolujte si zablokované kontakty v nastavení účtu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>57341</m:editing-time>
+<m:thinking-time>6699</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="87" m:para-id="87">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:87" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="87" m:created-at="1606139545913" m:created-by="540393" m:modified-at="1606140166960" m:modified-by="540393" m:level-edited="false">
+<source>Try to see if the drivers for the wireless card are active, and if the wireless button on the computer is connected.</source>
+<target>Zjistěte, zda jsou zapnuté ovladače pro bezdrátovou kartu a jestli máte v počítači připojené bezdrátové tlačítko.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>128939</m:editing-time>
+<m:thinking-time>18247</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="88" m:para-id="88">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:88" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="88" m:created-at="1606139620586" m:created-by="540393" m:modified-at="1606139620871" m:modified-by="540393" m:level-edited="false">
+<source>To install a program just insert the CD with the program or run the .Exe file and follow the installation steps.</source>
+<target>Pokud si chcete program nainstalovat, vložte CD s programem nebo spusťte soubor s koncovkou „.exe“. Při instalaci postupujte podle uvedeného návodu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>74372</m:editing-time>
+<m:thinking-time>5093</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="89" m:para-id="89">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:89" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="89" m:created-at="1606139641874" m:created-by="540393" m:modified-at="1606139642118" m:modified-by="540393" m:level-edited="false">
+<source>On the Gmail page, try recovering your account.</source>
+<target>Na stránce Gmailu se pokuste obnovit svůj účet.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>21020</m:editing-time>
+<m:thinking-time>4418</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="90" m:para-id="90">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:90" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="90" m:created-at="1606139683763" m:created-by="540393" m:modified-at="1606139684002" m:modified-by="540393" m:level-edited="false">
+<source>Make sure the game is compatible with Windows 8. Check on the box of the game or in the instruction manual.</source>
+<target>Prověřte si, že je hra kompatibilní s Windows 8. Informaci najdete na balení hry nebo v návodu na použití.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>41645</m:editing-time>
+<m:thinking-time>4257</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="91" m:para-id="91">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:91" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="91" m:created-at="1606139737585" m:created-by="540393" m:modified-at="1606139737823" m:modified-by="540393" m:level-edited="false">
+<source>You can register in the Zon client's area page.</source>
+<target>Zaregistrovat se můžete na stránce zákaznické zóny Zon.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>53605</m:editing-time>
+<m:thinking-time>9711</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="92" m:para-id="92">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:92" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="92" m:created-at="1606139817999" m:created-by="540393" m:modified-at="1606139818249" m:modified-by="540393" m:level-edited="false">
+<source>You will need a network cable to connect it to the router's WAN port and at the other end of the modem. Then turn off both devices and reconnect.</source>
+<target>K propojení portu WAN routeru a druhého konce modemu budete potřebovat síťový kabel. Poté obě zařízení vypněte a znovu připojte.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>80265</m:editing-time>
+<m:thinking-time>22521</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="93" m:para-id="93">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:93" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="93" m:created-at="1606139847553" m:created-by="540393" m:modified-at="1606141926971" m:modified-by="540393" m:level-edited="false">
+<source>Try to access the Play Store and install the application.</source>
+<target>Nainstalujte si aplikaci prostřednictvím Obchodu Play.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>54072</m:editing-time>
+<m:thinking-time>15688</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="94" m:para-id="94">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:94" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="94" m:created-at="1606139876097" m:created-by="540393" m:modified-at="1606139946274" m:modified-by="540393" m:level-edited="false">
+<source>Just press Ctrl + Shift + Del keys then select "clear browsing history".</source>
+<target>Stiskněte klávesy Ctrl, Shift a Del, a poté si zvolte možnost „vymazat historii prohlížení“.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>73974</m:editing-time>
+<m:thinking-time>5449</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="95" m:para-id="95">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:95" xml:space="preserve" m:score="0.0" m:gross-score="0.0" m:trans-origin="null" m:confirmed="1" m:locked="false" m:para-id="95" m:created-at="1606140028887" m:created-by="540393" m:modified-at="1606140216422" m:modified-by="540393" m:level-edited="false">
+<source>Windows provides Paint by default. You can also use free programs like GIMP, or professional programs such as Photoshop, for which you must pay.</source>
+<target>Windows poskytuje nástroj Malování ve výchozím nastavení. Můžete použít i bezplatné programy, jako jsou GIMP, nebo zpoplatněné profesionální programy, např. Photoshop.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>90006</m:editing-time>
+<m:thinking-time>5924</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="96" m:para-id="96">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:96" xml:space="preserve" m:score="0.99" m:gross-score="0.99" m:trans-origin="nt" m:trans-origin-detail="nt_ai" m:confirmed="1" m:locked="false" m:para-id="96" m:created-at="1606140036804" m:created-by="540393" m:modified-at="1606140246397" m:modified-by="540393" m:level-edited="false">
+<source># U této věty je možnost udělat si přestávku mezi překlady. (14)</source>
+<target># U této věty je možnost udělat si přestávku mezi překlady. (14)</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans origin="memsource-tm" match-quality="0.0">
+<target/></alt-trans>
+<m:editing-stats>
+<m:editing-time>37221</m:editing-time>
+<m:thinking-time>37106</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="97" m:para-id="97">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:97" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="97" m:created-at="1606140293510" m:created-by="540393" m:modified-at="1606141226605" m:modified-by="540393" m:level-edited="false">
+<source>Black hole swallowing and ripping apart star captured for first time</source>
+<target>První záznam černé díry během polykání a trhání hvězdy</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Černá díra polyká a trhá hvězdu zachycenou poprvé</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>78137</m:editing-time>
+<m:thinking-time>9132</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="98" m:para-id="98">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:98" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="98" m:created-at="1606140313583" m:created-by="540393" m:modified-at="1606141239232" m:modified-by="540393" m:level-edited="false">
+<source>A gigantic black hole has been captured pulling in and ripping apart a star for the first time.</source>
+<target>Poprvé se povedlo zachytil, jak obrovská černá díra vtahuje hvězdu a rozcupuje ji na kusy.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Gigantická černá díra byla zachycena, jak poprvé vtahuje a trhá hvězdu.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>57142</m:editing-time>
+<m:thinking-time>10174</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="99" m:para-id="99">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:99" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="99" m:created-at="1606140489751" m:created-by="540393" m:modified-at="1606141308340" m:modified-by="540393" m:level-edited="false">
+<source>The star, which was about the same size as our sun, was seen from 375 million light years away warping and spiralling into the gravitational pull of a supermassive black hole, researchers said in the Astrophysical Journal.</source>
+<target>Hvězda přibližně stejné velikosti jakou má naše Slunce, byla pozorována ze vzdálenosti 375 milionů světelných let při tom, jak se deformujte a stáčí do gravitačního pole supermasivní černé díry. Informace vědci sdělili v časopise Astrophysical Journal.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Hvězda, která byla přibližně stejně velká jako naše Slunce, byla viděna ze vzdálenosti 375 milionů světelných let, jak se kroutí a stáčí do gravitačního pole supermasivní černé díry, uvedli vědci v časopise Astrophysical Journal.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>184038</m:editing-time>
+<m:thinking-time>7004</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="100" m:para-id="100">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:100" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="100" m:created-at="1606140605478" m:created-by="540393" m:modified-at="1606140605731" m:modified-by="540393" m:level-edited="false">
+<source>It was then sucked into oblivion in a rare cosmic occurrence astronomers call a tidal disruption event.</source>
+<target>Hvězda byla následně vtažena a zničena při vzácném kosmickém jevu, který astronomové nazývají slapové roztrhání.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Poté byla nasána do zapomnění při vzácném kosmickém jevu, který astronomové nazývají událost přerušení přílivu a odlivu.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>115292</m:editing-time>
+<m:thinking-time>1245</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="101" m:para-id="101">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:101" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="101" m:created-at="1606140759060" m:created-by="540393" m:modified-at="1606141368329" m:modified-by="540393" m:level-edited="false">
+<source>NASA's planet-searching telescope, the Transiting Exoplanet Survey Satellite - TESS - captured the detailed timeline from beginning to end for the first time.</source>
+<target>Planetární dalekohled NASA, tzv. satelit pro výzkum tranzitujících exoplanet (TESS) poprvé zachytil tak podrobný průběh od začátku až do konce.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Dalekohled NASA, Transiting Exoplanet Survey Satellite – TESS, poprvé zachytil podrobnou časovou osu od začátku do konce.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>197866</m:editing-time>
+<m:thinking-time>28309</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="102" m:para-id="102">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:102" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="102" m:created-at="1606140823942" m:created-by="540393" m:modified-at="1606141563190" m:modified-by="540393" m:level-edited="false">
+<source>Astronomers used a worldwide network of telescopes to detect the phenomenon before looking at TESS, whose permanent viewing zones designed to find distant planets, caught the beginning of the violent event.</source>
+<target>Astronomové použili celosvětovou síť teleskopů, aby jev odhalili, než se podívají na TESS, jehož permanentní pozorovací zóny určené k hledání vzdálených planet zachytily počátek násilné události zachytily. </target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Astronomové použili celosvětovou síť teleskopů, aby jev odhalili, než se podívají na TESS, jehož permanentní pozorovací zóny určené k hledání vzdálených planet zachytily počátek násilné události.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>219971</m:editing-time>
+<m:thinking-time>18339</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="103" m:para-id="103">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:103" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="103" m:created-at="1606140939522" m:created-by="540393" m:modified-at="1606141625096" m:modified-by="540393" m:level-edited="false">
+<source>Thomas Holoien, an astronomer for the Carnegie Institution for Science who led the research, said: "This was really a combination of both being good and being lucky, and sometimes that's what you need to push the science forward."</source>
+<target>Vedoucí výzkumu, Thomas Holoien, astronom z Carnegieho institutu pro vědu, řekl: „Jednalo se o kombinaci odbornosti a notné dávky štěstí. A to je někdy to pravé, co potřebujete, abyste ve vědě dosáhli pokroku.“</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Thomas Holoien, astronom z Carnegieho institutu pro vědu, který výzkum vedl, řekl: „Tohle byla opravdu kombinace toho, že jste oba dobří a máte štěstí, a někdy je to to, co potřebujete, abyste posunuli vědu kupředu.“</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>170478</m:editing-time>
+<m:thinking-time>5212</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="104" m:para-id="104">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:104" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="104" m:created-at="1606141018357" m:created-by="540393" m:modified-at="1606141939803" m:modified-by="540393" m:level-edited="false">
+<source>Stars get sucked in when they venture too close to a supermassive black hole, which lives at the centre of most galaxies, including the Earth's Milky Way.</source>
+<target>Hvězdy se vsáknou, když se dostanou příliš blízko supermasivním černým dírám, které přebývají ve středu většiny galaxií, včetně Mléčné dráhy naší Země.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Hvězdy se vcucnou, když se odváží příliš blízko supermasivní černé díry, která žije ve středu většiny galaxií, včetně Mléčné dráhy Země.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>151491</m:editing-time>
+<m:thinking-time>13031</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="105" m:para-id="105">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:105" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="105" m:created-at="1606141106440" m:created-by="540393" m:modified-at="1606141735760" m:modified-by="540393" m:level-edited="false">
+<source>The black hole's impressive gravitational forces tear the star apart, with some of its material thrown into space and the rest into the black hole, forming a disc of hot, bright gas as it is swallowed.</source>
+<target>Působivá gravitační síla černé díry roztrhá hvězdu na kusy, přičemž část jejího materiálu vyvrhne do vesmíru a zbytek černá díra pohltí. Následně vznikne kotouč horkého a zářivého plynu.</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Působivé gravitační síly černé díry roztrhají hvězdu na kusy, přičemž část jejího materiálu je vržena do prostoru a zbytek do černé díry a při jejím pohlcení vytváří kotouč horkého, jasného plynu.</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>110446</m:editing-time>
+<m:thinking-time>8403</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+<group id="106" m:para-id="106">
+<trans-unit id="rah0n1kqa5ZdnZJv1_dc6:106" xml:space="preserve" m:score="1.0" m:gross-score="1.0" m:trans-origin="tm" m:confirmed="1" m:locked="false" m:para-id="106" m:created-at="1606141199899" m:created-by="540393" m:modified-at="1606141763740" m:modified-by="540393" m:level-edited="false">
+<source>Mr Holoien added: "Specifically, we are able to measure the rate at which it gets brighter after it starts brightening, and we also observed a drop in its temperature and brightness that is unique."</source>
+<target>Thomas Holoien dodává: „Konkrétně dokážeme změřit míru, s jakou se rozjasní poté, co k rozzáření dojde. Také jsme zpozorovali pokles její teploty a jasu, což je mimořádné.“</target>
+<alt-trans origin="machine-trans" match-quality="0.0">
+<target/></alt-trans>
+<alt-trans match-quality="1.0" origin="memsource-tm" tm-id="1312283">
+<target>Pan Holoien dodal: „Konkrétně jsme schopni změřit rychlost, s jakou se rozjasní poté, co se rozjasní, a také jsme pozorovali pokles jeho teploty a jasu, který je jedinečný.“</target></alt-trans>
+<m:editing-stats>
+<m:editing-time>120482</m:editing-time>
+<m:thinking-time>8135</m:thinking-time>
+</m:editing-stats>
+</trans-unit>
+</group>
+</body>
+</file>
+<m:extra>
+<m:users>
+<m:user fullname="UFAL CP6" id="540393" username="UFAL_CP6">
+</m:user>
+</m:users>
+</m:extra>
+</xliff>
