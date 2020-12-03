@@ -38,7 +38,7 @@ class MxDoc():
         self.index = index
 
 def parse_lines(lines, user, index_data):
-    lines = [MxLine(l) for l in lines]
+    lines = [MxLine(l) for l in lines if 'trans-unit' in l]
     buffer = []
     data = []
     index = None

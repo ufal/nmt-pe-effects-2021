@@ -6,9 +6,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
+parser = argparse.ArgumentParser()
+parser.add_argument('-s', '--per-sent', action='store_true', default=False)
+parser.add_argument('-m', '--mt-only', action='store_true', default=False)
+args = parser.parse_known_args()[0]
+
 data = load_mx()
-SKIP_SRC_REF = False
-PER_SENT = False
+SKIP_SRC_REF = args.mt_only
+PER_SENT = args.per_sent
 MAX_WORD_TIME = 40 
 MAX_SENT_TIME = MAX_WORD_TIME*20
 
