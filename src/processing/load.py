@@ -11,6 +11,7 @@ class MxLine():
     def __init__(self, root):
         self.source = root['trans-unit']['source']
         self.target = root['trans-unit']['target']
+        self.boundary = False
         
         if self.source[0] == '#':
             self.index = int(re.search('\d+', self.source).group(0))
@@ -27,7 +28,7 @@ class MxLine():
         tokens = self.provided.split()
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
-        
+
 class MxDoc():
     def __init__(self, lines, user, index):
         self.lines = lines
@@ -39,6 +40,17 @@ class MxDoc():
 
 def parse_lines(lines, user, index_data):
     lines = [MxLine(l) for l in lines if 'trans-unit' in l]
+    for idx in range(len(lines)):
+        if lines[idx].source[0] == '#':
+            if idx > 0:
+                lines[idx - 1].boundary = True
+            if idx < len(lines) - 1:
+                lines[idx + 1].boundary = True
+
+    for line in [line for line in lines if line.index is None]:
+        if line.edit_time_word > 40:
+            print(f"{line.boundary};{line.source.replace(';', ',')};{line.edit_time}")
+
     buffer = []
     data = []
     index = None

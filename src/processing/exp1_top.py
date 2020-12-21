@@ -71,4 +71,4 @@ plt.title(
 plt.xlabel('BLEU')
 perwhat = 'document' if AGGREGATE_DOCUMENTS else 'sentence'
 plt.ylabel(f'average (per {perwhat}) line edit time' if PER_SENT else f'average (per {perwhat}) word edit time')
-plt.show()
+# plt.show()
