@@ -11,6 +11,13 @@ class MxLine():
     def __init__(self, root):
         self.source = root['trans-unit']['source']
         self.target = root['trans-unit']['target']
+        self.tunit_id = root['trans-unit']['@id']
+
+        # the following three fields are set incorrectly, it's up to the caller to define the
+        # correct values
+        self.comments = []
+        self.is_first = False
+        self.is_last = False
         
         if self.source[0] == '#':
             self.index = int(re.search('\d+', self.source).group(0))
@@ -29,15 +36,16 @@ class MxLine():
         self.think_time_word = self.think_time / len(tokens)
         
 class MxDoc():
-    def __init__(self, lines, user, index):
+    def __init__(self, lines, user, index, job_uid):
         self.lines = lines
         self.user_u = user
         self.user_a = index['annotator']
         self.doc_name = index['doc_name']
         self.mt_name = index['mt_name']
         self.index = index
+        self.job_uid = job_uid
 
-def parse_lines(lines, user, index_data):
+def parse_lines(lines, user, index_data, job_uid):
     lines = [MxLine(l) for l in lines if 'trans-unit' in l]
     buffer = []
     data = []
@@ -45,13 +53,13 @@ def parse_lines(lines, user, index_data):
     for line in lines:
         if line.index is not None:
             if buffer:
-                data.append(MxDoc(buffer, user, index))
+                data.append(MxDoc(buffer, user, index, job_uid))
                 buffer = []
             index = index_data[str(line.index)]
         else:
             buffer.append(line)
     if buffer:
-        data.append(MxDoc(buffer, user, index))
+        data.append(MxDoc(buffer, user, index, job_uid))
     return data
 
 def load_mx():
@@ -68,10 +76,12 @@ def load_mx():
     for fname in data_files:
         with open(fname, 'r') as f:
             tree = xmltodict.parse(f.read())['xliff']
+            job_uid = tree['file']['@m:job-uid']
             data += parse_lines(
                 tree['file']['body']['group'],
                 tree['m:extra']['m:users']['m:user']['@username'],
-                index_data
+                index_data,
+                job_uid
             )
     return data
 
