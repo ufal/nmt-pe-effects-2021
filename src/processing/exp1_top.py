@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-from utils import MT_BLEU
 from load import *
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
+from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--per-sent', action='store_true')
@@ -16,8 +16,6 @@ data = load_mx()
 SKIP_SRC_REF = args.mt_only
 AGGREGATE_DOCUMENTS = args.aggregate_documents
 PER_SENT = args.per_sent
-MAX_WORD_TIME = 20
-MAX_SENT_TIME = MAX_WORD_TIME*20
 
 # compute per-model data
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
@@ -59,12 +57,6 @@ def top_n(n, points=False):
     if points:
         plt.plot(xval, yval, '.', alpha=0.5)
     plt.plot(xval, poly1d_fn(xval), label=f'Top {n:02}, {coef[0]:>6.3f}')
-    explanation = (
-        ('time per line = ' if PER_SENT else 'time per word = ') +
-        str(poly1d_fn).strip().replace(' x', '*BLEU') + '\n' +
-        ('(without src, ref)' if SKIP_SRC_REF else '(with src, ref)')
-    )
-
 
 # misc. plot parameters
 plt.figure(figsize=(5, 4))

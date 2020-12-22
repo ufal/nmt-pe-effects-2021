@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-from utils import MT_BLEU
 from load import *
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
+from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--per-sent', action='store_true')
@@ -12,8 +12,6 @@ args = parser.parse_args()
 
 data = load_mx()
 PER_SENT = args.per_sent
-MAX_WORD_TIME = 20
-MAX_SENT_TIME = MAX_WORD_TIME*20
 
 MT_ORDER = sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])
 
@@ -41,12 +39,7 @@ def top_all():
     poly1d_fn = np.poly1d(coef)
     plt.plot(xval, yval, 'o', alpha=0.1)
     plt.plot(xval, poly1d_fn(xval), label=f'Coef: {coef[0]:>6.3f}')
-    plt.xticks(range(len(MT_ORDER)), MT_ORDER, rotation=90)
-    explanation = (
-        ('time per line = ' if PER_SENT else 'time per word = ') +
-        str(poly1d_fn).strip().replace(' x', '*BLEU') + '\n' +
-        '(with src, ref)'
-    )
+    plt.xticks(range(len(mt_times.keys())), mt_times.keys(), rotation=90)
 
 
 # misc. plot parameters

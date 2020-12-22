@@ -17,3 +17,6 @@ MT_BLEU = {
     'google': (37.56, 26.06),
     'microsoft': (33.06, 26.30),
 }
+
+MAX_WORD_TIME = 20
+MAX_SENT_TIME = MAX_WORD_TIME*20
