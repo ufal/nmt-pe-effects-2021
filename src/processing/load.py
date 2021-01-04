@@ -36,6 +36,12 @@ class MxDoc():
         self.doc_name = index['doc_name']
         self.mt_name = index['mt_name']
         self.index = index
+    
+    def source(self):
+        return ''.join([line.source + '\n' for line in self.lines])
+
+    def target(self):
+        return ''.join([line.target + '\n' for line in self.lines])
 
 def parse_lines(lines, user, index_data):
     lines = [MxLine(l) for l in lines if 'trans-unit' in l]
@@ -57,7 +63,7 @@ def parse_lines(lines, user, index_data):
 def load_mx():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--mxliff-data-dir', default='docs/memsource/raw-translations')
-    parser.add_argument('-i', '--index', default='docs/out/index.json')
+    parser.add_argument('-i', '--index', default='docs/out_p1/index.json')
     args = parser.parse_known_args()[0]
 
     with open(args.index, 'r') as f:
