@@ -40,6 +40,9 @@ class MxDoc():
     def source(self):
         return ''.join([line.source + '\n' for line in self.lines])
 
+    def provided(self):
+        return ''.join([line.provided + '\n' for line in self.lines])
+
     def target(self):
         return ''.join([line.target + '\n' for line in self.lines])
 
