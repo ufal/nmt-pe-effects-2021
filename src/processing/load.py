@@ -9,6 +9,7 @@ import re
 
 class MxLine():
     def __init__(self, root):
+        self.root = root
         self.source = root['trans-unit']['source']
         self.target = root['trans-unit']['target']
         
@@ -28,8 +29,8 @@ class MxLine():
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
 
-    def clone_shallow(self):
-        return self
+    def clone(self):
+        return MxLine(self.root)
         
 class MxDoc():
     def __init__(self, lines, user, index):
@@ -49,8 +50,8 @@ class MxDoc():
     def target(self):
         return ''.join([line.target + '\n' for line in self.lines])
 
-    def clone_shallow(self):
-        return MxDoc([x.clone_shallow() for x in self.lines], self.user_u, self.index)
+    def clone(self):
+        return MxDoc([x.clone() for x in self.lines], self.user_u, self.index)
 
     def mut_provided_to_target(self):
         for line in self.lines:
