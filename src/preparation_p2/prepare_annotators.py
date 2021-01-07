@@ -19,7 +19,7 @@ parser.add_argument('--out_dir_p2', default='docs/out_p2/',
                     help='Path to the output directory (doesn\'t have to exist)')
 parser.add_argument('--shuffle-doc', default=True, action='store_true')
 parser.add_argument('--no-save', default=False, action='store_true')
-parser.add_argument('--seed', default=306, type=int)
+parser.add_argument('--seed', default=34, type=int)
 args = parser.parse_args()
 random.seed(args.seed)
 
@@ -27,35 +27,43 @@ data = load_mx()
 data_p1 = defaultdict(list)
 doc_names = set()
 mt_names = set()
-u1_names = set()
+u1_names = set({'rm', 'rr'})
 
 data_spec_ref = []
 data_spec_mt = []
 
 for doc in data:
-    if doc.mt_name == 'ref':
-        data_spec_ref.append(doc)
-    if doc.mt_name == 'm11':
-        data_spec_mt.append(doc)
     data_p1[doc.doc_name].append(doc)
     doc_names.add(doc.doc_name)
     mt_names.add(doc.mt_name)
     u1_names.add(doc.user_a)
+
+    if doc.mt_name == 'ref':
+        doc = doc.clone_shallow()
+        doc.user_a = 'rr'
+        doc.mut_provided_to_target()
+        data_p1[doc.doc_name].append(doc)
+    elif doc.mt_name == 'm11':
+        doc = doc.clone_shallow()
+        doc.user_a = 'rm'
+        doc.mut_provided_to_target()
+        data_p1[doc.doc_name].append(doc)
+
 del data
 data_new = {}
 
 # assumptions for the input data
 assert(len(doc_names) == 8)
 for doc_name in data_p1.keys():
-    assert(len(data_p1[doc_name]) == 15)
+    assert(len(data_p1[doc_name]) == 15+2)
     random.shuffle(data_p1[doc_name])
 
 print('Processing data')
 overlap = {'m': [], 'u': [], 'mu': []}
 
 # Pick a user for every document for every u_p2
-p2_docs = [[] for _ in range(15)]
-for u_p2 in range(15):
+p2_docs = [[] for _ in range(15+2)]
+for u_p2 in range(15+2):
     u_p2_counter_ua = Counter()
     u_p2_counter_mt = Counter()
     u_p2_counter_mu = Counter()
@@ -101,8 +109,8 @@ for doc_name, doc_list in data_p1.items():
 
 print('Serializing data')
 
-serial_tgt = [""] * (15+1+1)
-serial_src = [""] * (15+1+1)
+serial_tgt = [""] * (15+2)
+serial_src = [""] * (15+2)
 indexdata = {}
 index_pointer = 0
 
@@ -117,23 +125,12 @@ for u_p2, doc_queue in enumerate(p2_docs):
         indexdata[index_pointer] = {'annotator': doc.user_a, 'corrector': u_p2, 'mt': doc.mt_name, 'doc': doc.doc_name}
         index_pointer += 1
 
-for u_p2, doc_queue in [(15, data_spec_ref), (16, data_spec_mt)]:
-    if args.shuffle_doc:
-        random.shuffle(doc_queue)
-    for doc in doc_queue:
-        serial_tgt[u_p2] += f'# {RELAX_MESSAGE_MT} ({index_pointer})\n'
-        serial_src[u_p2] += f'# {RELAX_MESSAGE_MT} ({index_pointer})\n'
-        serial_tgt[u_p2] += doc.provided()
-        serial_src[u_p2] += doc.source()
-        indexdata[index_pointer] = {'annotator': doc.user_a, 'corrector': u_p2, 'mt': doc.mt_name, 'doc': doc.doc_name}
-        index_pointer += 1
-
 if args.no_save:
     exit(0)
 
 print('Storing data')
 makedirs(args.out_dir_p2, exist_ok=True)
-for u_p2 in range(15+1+1):
+for u_p2 in range(15+2):
     with open(f'{args.out_dir_p2}/k{u_p2}.tgt', 'w') as f:
         f.write(serial_tgt[u_p2].rstrip('\n'))
     with open(f'{args.out_dir_p2}/k{u_p2}.src', 'w') as f:

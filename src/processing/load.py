@@ -27,6 +27,9 @@ class MxLine():
         tokens = self.provided.split()
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
+
+    def clone_shallow(self):
+        return self
         
 class MxDoc():
     def __init__(self, lines, user, index):
@@ -45,6 +48,13 @@ class MxDoc():
 
     def target(self):
         return ''.join([line.target + '\n' for line in self.lines])
+
+    def clone_shallow(self):
+        return MxDoc([x.clone_shallow() for x in self.lines], self.user_u, self.index)
+
+    def mut_provided_to_target(self):
+        for line in self.lines:
+            line.target = line.provided
 
 def parse_lines(lines, user, index_data):
     lines = [MxLine(l) for l in lines if 'trans-unit' in l]
