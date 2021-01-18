@@ -9,6 +9,7 @@ import re
 
 class MxLine():
     def __init__(self, root):
+        self.root = root
         self.source = root['trans-unit']['source']
         self.target = root['trans-unit']['target']
         self.tunit_id = root['trans-unit']['@id']
@@ -34,6 +35,9 @@ class MxLine():
         tokens = self.provided.split()
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
+
+    def clone(self):
+        return MxLine(self.root)
         
 class MxDoc():
     def __init__(self, lines, user, index, job_uid):
@@ -44,6 +48,22 @@ class MxDoc():
         self.mt_name = index['mt_name']
         self.index = index
         self.job_uid = job_uid
+    
+    def source(self):
+        return ''.join([line.source + '\n' for line in self.lines])
+
+    def provided(self):
+        return ''.join([line.provided + '\n' for line in self.lines])
+
+    def target(self):
+        return ''.join([line.target + '\n' for line in self.lines])
+
+    def clone(self):
+        return MxDoc([x.clone() for x in self.lines], self.user_u, self.index)
+
+    def mut_provided_to_target(self):
+        for line in self.lines:
+            line.target = line.provided
 
 def parse_lines(lines, user, index_data, job_uid):
     lines = [MxLine(l) for l in lines if 'trans-unit' in l]
@@ -65,7 +85,7 @@ def parse_lines(lines, user, index_data, job_uid):
 def load_mx():
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--mxliff-data-dir', default='docs/memsource/raw-translations')
-    parser.add_argument('-i', '--index', default='docs/out/index.json')
+    parser.add_argument('-i', '--index', default='docs/out_p1/index.json')
     args = parser.parse_known_args()[0]
 
     with open(args.index, 'r') as f:
