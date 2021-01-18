@@ -6,6 +6,9 @@ import glob, os
 from pathlib import Path
 import xmltodict
 import re
+import sacrebleu
+from nltk.tokenize import word_tokenize
+from utils import f1
 
 class MxLine():
     def __init__(self, root):
@@ -35,6 +38,17 @@ class MxLine():
         tokens = self.provided.split()
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
+
+    def ter(self):
+        return sacrebleu.sentence_ter(self.target, [self.provided]).score
+
+    def unigram(self):        
+        provided_set = word_tokenize(self.provided.lower())
+        target_set = word_tokenize(self.target.lower())
+        return f1(
+            len([x for x in target_set if x in provided_set]) / len(target_set),
+            len([x for x in target_set if x in provided_set]) / len(provided_set)
+        )
 
     def clone(self):
         return MxLine(self.root)

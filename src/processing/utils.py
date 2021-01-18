@@ -20,3 +20,6 @@ MT_BLEU = {
 
 MAX_WORD_TIME = 20
 MAX_SENT_TIME = MAX_WORD_TIME*20
+
+def f1(x, y):
+    return 0 if (x+y) == 0 else 2*x*y/(x+y)
