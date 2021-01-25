@@ -39,6 +39,9 @@ class MxLine():
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
 
+    def chrf(self):
+        return sacrebleu.sentence_chrf(self.target, [self.provided]).score
+
     def ter(self):
         return sacrebleu.sentence_ter(self.target, [self.provided]).score
 

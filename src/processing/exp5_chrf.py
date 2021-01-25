@@ -20,11 +20,11 @@ mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
     if AGGREGATE_DOCUMENTS:
         doc_time_avg = np.average(
-            [x.ter() for x in doc.lines]
+            [x.chrf() for x in doc.lines]
         )
         mt_times[doc.mt_name].append(doc_time_avg)
     else:
-        mt_times[doc.mt_name] += [x.ter() for x in doc.lines]
+        mt_times[doc.mt_name] += [x.chrf() for x in doc.lines]
 
 
 def top_n(n, points=False):
@@ -55,8 +55,8 @@ top_n(10)
 top_n(8)
 plt.legend(ncol=2,handlelength=1, columnspacing=1)
 plt.xlabel('BLEU')
-plt.ylabel('HTER')
-plt.ylim(-0.1, 1.5)
+plt.ylabel('ChrF6')
+plt.ylim(0, 1.28)
 plt.tight_layout(rect=(-0.02, -0.01, 1, 1))
 plt.show()
 

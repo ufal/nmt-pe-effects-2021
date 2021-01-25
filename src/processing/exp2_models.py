@@ -8,21 +8,28 @@ from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--per-sent', action='store_true')
+parser.add_argument('--micro', action='store_true')
 args = parser.parse_args()
 
 data = load_mx()
 PER_SENT = args.per_sent
+MICROAVERAGE = args.micro
 
 MT_ORDER = sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])
 
 # compute per-model data
 mt_times = {k: [] for k in MT_ORDER}
 for doc in data:
-    if PER_SENT:
-        mt_times[doc.mt_name] += [x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME]
+    if MICROAVERAGE:
+        if PER_SENT:
+            mt_times[doc.mt_name] += [np.average([x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME])]
+        else:
+            mt_times[doc.mt_name] += [np.average([x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME])]
     else:
-        mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME]
-
+        if PER_SENT:
+            mt_times[doc.mt_name] += [x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME]
+        else:
+            mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME]
 
 def top_all():
     # actual value plotting

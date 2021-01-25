@@ -1,0 +1,35 @@
+$ ./src/processing/exp2_models.py 
+time per word (with src, ref)
+       ref   3.24
+    google   3.63
+       m08   3.63
+       m07   3.68
+ microsoft   4.09
+       m09   4.17
+       m04   4.59
+       m02   4.81
+       m11   4.83
+       m01   4.94
+       m03   5.00
+       m06   5.14
+       src   5.17
+       m10   5.34
+       m05   5.62
+
+$ ./src/processing/exp2_models.py --micro
+time per word (with src, ref)
+       ref   3.66
+       m07   3.95
+       m08   4.21
+       src   4.87
+       m03   4.87
+       m06   5.29
+    google   5.35
+ microsoft   5.41
+       m04   5.44
+       m09   5.49
+       m02   5.58
+       m01   5.73
+       m11   6.56
+       m05   6.81
+       m10   7.02
