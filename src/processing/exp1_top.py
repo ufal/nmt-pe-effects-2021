@@ -7,7 +7,6 @@ from sklearn.linear_model import LinearRegression
 from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--per-sent', action='store_true')
 parser.add_argument('-m', '--mt-only', action='store_true')
 parser.add_argument('-a', '--aggregate-documents', action='store_true')
 args = parser.parse_args()
@@ -15,27 +14,19 @@ args = parser.parse_args()
 data = load_mx()
 SKIP_SRC_REF = args.mt_only
 AGGREGATE_DOCUMENTS = args.aggregate_documents
-PER_SENT = args.per_sent
 
 # compute per-model data
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
     if AGGREGATE_DOCUMENTS:
-        if PER_SENT:
-            doc_time_avg = np.average(
-                [x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME]
-            )
-            mt_times[doc.mt_name].append(doc_time_avg)
-        else:
-            doc_time_avg = np.average(
-                [x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME]
-            )
-            mt_times[doc.mt_name].append(doc_time_avg)
+        # TODO: this is incorrect
+        doc_time_avg = np.average(
+            [x.edit_time_word for x in doc.lines]
+        )
+        mt_times[doc.mt_name].append(doc_time_avg)
     else:
-        if PER_SENT:
-            mt_times[doc.mt_name] += [x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME]
-        else:
-            mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME]
+        # microaverage
+        mt_times[doc.mt_name] += [min(MAX_WORD_TIME, x.edit_time_word) for x in doc.lines for _ in x.source.split()]
 
 
 def top_n(n, points=False):
@@ -55,7 +46,7 @@ def top_n(n, points=False):
     poly1d_fn = np.poly1d(coef)
 
     if points:
-        plt.plot(xval, yval, '.', alpha=0.5)
+        plt.plot(xval, yval, '.', alpha=0.005, markersize=5)
     plt.plot(xval, poly1d_fn(xval), label=f'Top {n:02}, {coef[0]:>6.3f}')
 
 # misc. plot parameters
@@ -66,11 +57,10 @@ top_n(10)
 top_n(8)
 plt.legend()
 plt.title(
-    ('time per line ' if PER_SENT else 'time per word ') +
+    ('time per word ') +
     ('(without src, ref)' if SKIP_SRC_REF else '(with src, ref)')
 )
 plt.xlabel('BLEU')
 perwhat = 'document' if AGGREGATE_DOCUMENTS else 'sentence'
-plt.ylabel(
-    f'average (per {perwhat}) line edit time' if PER_SENT else f'average (per {perwhat}) word edit time')
+plt.ylabel(f'average (per {perwhat}) word edit time')
 plt.show()

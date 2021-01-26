@@ -35,7 +35,7 @@ class MxLine():
         self.edit_time = int(root['trans-unit']['m:editing-stats']['m:editing-time'])/1000
         self.think_time = int(root['trans-unit']['m:editing-stats']['m:thinking-time'])/1000
         
-        tokens = self.provided.split()
+        tokens = self.source.split()
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
 

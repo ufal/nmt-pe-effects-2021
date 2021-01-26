@@ -18,6 +18,15 @@ MT_BLEU = {
     'microsoft': (33.06, 26.30),
 }
 
+def pretty_mt_name(mt):
+    # Online 1, Online 2
+    if mt == 'microsoft':
+        return 'MS'
+    if mt == 'google':
+        return 'GGLE'
+    return mt.upper()
+
+
 MAX_WORD_TIME = 20
 MAX_SENT_TIME = MAX_WORD_TIME*20
 

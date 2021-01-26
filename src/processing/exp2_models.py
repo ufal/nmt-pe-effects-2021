@@ -4,65 +4,51 @@ from load import *
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
+from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME, pretty_mt_name
+from collections import defaultdict
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--per-sent', action='store_true')
-parser.add_argument('--micro', action='store_true')
+parser.add_argument('--sent', action='store_true')
 args = parser.parse_args()
 
 data = load_mx()
-PER_SENT = args.per_sent
-MICROAVERAGE = args.micro
+SENT_AVERAGE = args.sent
 
 MT_ORDER = sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])
 
 # compute per-model data
 mt_times = {k: [] for k in MT_ORDER}
 for doc in data:
-    if MICROAVERAGE:
-        if PER_SENT:
-            mt_times[doc.mt_name] += [x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME for _ in x.target.split()]
-        else:
-            mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME for _ in x.target.split()]
+    if SENT_AVERAGE:
+        mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines]
     else:
-        # sentence-level average
-        if PER_SENT:
-            mt_times[doc.mt_name] += [x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME]
-        else:
-            mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME]
+        mt_times[doc.mt_name] += [
+            x.edit_time_word
+            for x in doc.lines for _ in x.source.split()
+            if x.edit_time_word != 0
+        ]
 
-def top_all():
-    # actual value plotting
-    bleu_time = []
-    for i, mt_name in enumerate(mt_times.keys()):
-        bleus = MT_BLEU[mt_name]
-        bleu_time += [(i, v) for v in mt_times[mt_name]]
-
-    xval = [x[0] for x in bleu_time]
-    yval = [x[1] for x in bleu_time]
-
-    # linear fit
-    coef = np.polyfit(xval, yval, 1)
-    poly1d_fn = np.poly1d(coef)
-    plt.plot(xval, yval, 'o', alpha=0.1)
-    plt.plot(xval, poly1d_fn(xval), label=f'Coef: {coef[0]:>6.3f}')
-    plt.xticks(range(len(mt_times.keys())), mt_times.keys(), rotation=90)
-
+for mt_name, mt_vals in mt_times.items():
+    mt_times[mt_name] = sorted(mt_vals, reverse=False)[:int(0.85*len(mt_vals))]
 
 # misc. plot parameters
-plt.figure(figsize=(5, 4))
-top_all()
-plt.legend()
-TITLE = ('time per line ' if PER_SENT else 'time per word ') + '(with src, ref)'
-plt.title(TITLE)
-plt.ylabel('line edit time' if PER_SENT else 'word edit time')
+fig, ax1 = plt.subplots(figsize=(5, 4))
+ax2 = ax1.twinx()
+
+ax1.boxplot(mt_times.values())
+ax2.plot(range(1, len(mt_times.keys())+1),
+         [MT_BLEU[x][0] for x in MT_ORDER], '*', alpha=1, markersize=7)
+ax1.set_xticks(range(1, len(mt_times.keys())+1))
+ax1.set_xticklabels([pretty_mt_name(x) for x in mt_times.keys()], rotation=45)
+
+#plt.title('Time per word')
+ax1.set_ylabel('Word edit time')
+ax2.set_ylabel('BLEU')
 plt.tight_layout()
 plt.show()
 
 
 # print model averages
-print(TITLE)
 print('\n'.join([
     f'{name:>10} {np.average(v):6.2f}'
     for name, v
