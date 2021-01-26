@@ -22,10 +22,11 @@ mt_times = {k: [] for k in MT_ORDER}
 for doc in data:
     if MICROAVERAGE:
         if PER_SENT:
-            mt_times[doc.mt_name] += [np.average([x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME])]
+            mt_times[doc.mt_name] += [x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME for _ in x.target.split()]
         else:
-            mt_times[doc.mt_name] += [np.average([x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME])]
+            mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME for _ in x.target.split()]
     else:
+        # sentence-level average
         if PER_SENT:
             mt_times[doc.mt_name] += [x.edit_time for x in doc.lines if x.edit_time <= MAX_SENT_TIME]
         else:
