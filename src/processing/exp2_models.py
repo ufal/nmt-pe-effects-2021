@@ -23,9 +23,8 @@ for doc in data:
         mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines]
     else:
         mt_times[doc.mt_name] += [
-            x.edit_time_word
-            for x in doc.lines for _ in x.source.split()
-            if x.edit_time_word != 0
+            x.edit_time_word - min(MAX_WORD_TIME, x.think_time_word)
+            for x in doc.lines for _ in x.target.split()
         ]
 
 for mt_name, mt_vals in mt_times.items():
