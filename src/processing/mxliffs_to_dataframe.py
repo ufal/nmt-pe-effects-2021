@@ -40,6 +40,52 @@ class MemsourceTinyClient:
         return self._get(f"jobs/{job_uid}/conversations")
 
 
+def extract_record_phase_1(segment, conversations):
+    for conv in conversations['conversations']:
+        if conv['references']['segmentId'] == segment.tunit_id:
+            for comment in conv['comments']:
+                segment.comments.append(comment['text'])
+
+    line_record = {
+        "tunit_id": segment.tunit_id,
+        "source": segment.source,
+        "target": segment.target,
+        "comments": "\n".join(segment.comments),
+        "provided": segment.provided,
+        "edit_time": segment.edit_time,
+        "think_time": segment.think_time,
+        "edit_time_word": segment.edit_time_word,
+        "think_time_word": segment.think_time_word,
+        "is_first": segment.is_first,
+        "is_last": segment.is_last,
+    }
+
+    return line_record
+
+
+def extract_record_phase_2(segment, conversations):
+    for conv in conversations['conversations']:
+        if conv['references']['segmentId'] == segment.tunit_id:
+            for comment in conv['comments']:
+                segment.comments.append(comment['text'])
+
+    line_record = {
+        "tunit_id": segment.tunit_id,
+        "source": segment.source,
+        "target": segment.target,
+        "comments": "\n".join(segment.comments),
+        "provided": segment.provided,
+        "edit_time": segment.edit_time,
+        "think_time": segment.think_time,
+        "edit_time_word": segment.edit_time_word,
+        "think_time_word": segment.think_time_word,
+        "is_first": segment.is_first,
+        "is_last": segment.is_last,
+    }
+
+    return line_record
+
+
 def main():
     client = MemsourceTinyClient()
     data = load_mx()
@@ -61,24 +107,7 @@ def main():
         doc.lines[-1].is_last = True
 
         for segment in doc.lines:
-            for conv in conversations['conversations']:
-                if conv['references']['segmentId'] == segment.tunit_id:
-                    for comment in conv['comments']:
-                        segment.comments.append(comment['text'])
-
-            line_record = {
-                "tunit_id": segment.tunit_id,
-                "source": segment.source,
-                "target": segment.target,
-                "comments": "\n".join(segment.comments),
-                "provided": segment.provided,
-                "edit_time": segment.edit_time,
-                "think_time": segment.think_time,
-                "edit_time_word": segment.edit_time_word,
-                "think_time_word": segment.think_time_word,
-                "is_first": segment.is_first,
-                "is_last": segment.is_last,
-            }
+            line_record = extract_record_phase_1(segment, conversations)
 
             print(json.dumps(
                 {**doc_record, **line_record}, ensure_ascii=False, sort_keys=True))
