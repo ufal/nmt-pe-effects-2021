@@ -17,7 +17,7 @@ SKIP_SRC_REF = args.mt_only
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
     # microaverage
-    mt_times[doc.mt_name] += [ x.chrf_rev() for x in doc.lines ]
+    mt_times[doc.mt_name] += [ x.ter_rev() for x in doc.lines ]
 
 def top_n(n, points=False):
     # actual value plotting

@@ -54,9 +54,20 @@ class MxLine():
         self.revision_is_first = rev_line['revision_is_first']
         self.revision_is_last = rev_line['revision_is_last']
         self.revision_target = rev_line['target']
+        self.lqa = [
+            conversation['references']['lqa']
+            if 'lqa' in conversation['references']
+            else []
+            for conversation in rev_line['revision_conversation']
+        ]
+        self.lqa = [x for x in self.lqa if len(x) != 0]
+        self.lqa = [item for subl in self.lqa for item in subl]
 
     def chrf(self):
         return sacrebleu.sentence_chrf(self.target, [self.provided]).score
+
+    def lqa_count(self):
+        return len(self.lqa)
 
     def chrf_rev(self):
         return sacrebleu.sentence_chrf(self.revision_target, [self.target]).score
@@ -159,10 +170,8 @@ def load_mx():
             lambda: defaultdict(lambda: defaultdict(lambda: {}))))
         for line in f:
             rev_line = json.loads(line)
-            rev_data[rev_line['doc_name']] \
-                [rev_line['user_a']] \
-                [rev_line['mt_name']] \
-                [rev_line['source']] = rev_line
+            rev_data[rev_line['doc_name']][rev_line['user_a']
+                                           ][rev_line['mt_name']][rev_line['source']] = rev_line
 
     for doc in data:
         doc.update_rev_doc(rev_data[doc.doc_name][doc.user_a][doc.mt_name])
