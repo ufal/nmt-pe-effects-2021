@@ -1,4 +1,5 @@
 import requests
+import argparse
 import os
 import urllib.parse
 import json
@@ -40,9 +41,60 @@ class MemsourceTinyClient:
         return self._get(f"jobs/{job_uid}/conversations")
 
 
+def extract_record_phase_1(segment, conversations):
+    for conv in conversations['conversations']:
+        if conv['references']['segmentId'] == segment.tunit_id:
+            for comment in conv['comments']:
+                segment.comments.append(comment['text'])
+
+    line_record = {
+        "tunit_id": segment.tunit_id,
+        "source": segment.source,
+        "target": segment.target,
+        "comments": "\n".join(segment.comments),
+        "provided": segment.provided,
+        "edit_time": segment.edit_time,
+        "think_time": segment.think_time,
+        "edit_time_word": segment.edit_time_word,
+        "think_time_word": segment.think_time_word,
+        "is_first": segment.is_first,
+        "is_last": segment.is_last,
+    }
+
+    return line_record
+
+
+def extract_record_phase_2(segment, conversations):
+
+    conversation = [conv for conv in conversations['conversations']
+                    if conv['references']['segmentId'] == segment.tunit_id]
+
+    line_record = {
+        "tunit_id": segment.tunit_id,
+        "source": segment.source,
+        "target": segment.target,
+        "revision_conversation": conversation,
+        "revision_provided": segment.provided,
+        "revision_edit_time": segment.edit_time,
+        "revision_think_time": segment.think_time,
+        "revision_edit_time_word": segment.edit_time_word,
+        "revision_think_time_word": segment.think_time_word,
+        "revision_is_first": segment.is_first,
+        "revision_is_last": segment.is_last,
+    }
+
+    return line_record
+
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--phase-2', action='store_true')
+    args = parser.parse_known_args()[0]
+
     client = MemsourceTinyClient()
     data = load_mx()
+
+    extract_fn = extract_record_phase_2 if args.phase_2 else extract_record_phase_1
 
     # XXX this is not very efficient but who cares
     for doc in data:
@@ -61,24 +113,7 @@ def main():
         doc.lines[-1].is_last = True
 
         for segment in doc.lines:
-            for conv in conversations['conversations']:
-                if conv['references']['segmentId'] == segment.tunit_id:
-                    for comment in conv['comments']:
-                        segment.comments.append(comment['text'])
-
-            line_record = {
-                "tunit_id": segment.tunit_id,
-                "source": segment.source,
-                "target": segment.target,
-                "comments": "\n".join(segment.comments),
-                "provided": segment.provided,
-                "edit_time": segment.edit_time,
-                "think_time": segment.think_time,
-                "edit_time_word": segment.edit_time_word,
-                "think_time_word": segment.think_time_word,
-                "is_first": segment.is_first,
-                "is_last": segment.is_last,
-            }
+            line_record = extract_fn(segment, conversations)
 
             print(json.dumps(
                 {**doc_record, **line_record}, ensure_ascii=False, sort_keys=True))
