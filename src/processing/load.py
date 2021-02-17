@@ -10,6 +10,7 @@ import re
 import sacrebleu
 from nltk.tokenize import word_tokenize
 from collections import defaultdict
+from utils import f1
 
 
 class MxLine():
@@ -45,16 +46,23 @@ class MxLine():
 
     def update_rev_line(self, rev_line):
         assert(len(rev_line.keys()) > 0)
+        assert(rev_line['revision_provided'] == rev_line['source'])
         self.revision_edit_time = rev_line['revision_edit_time']
         self.revision_edit_time_word = rev_line['revision_edit_time_word']
         self.revision_think_time = rev_line['revision_think_time']
         self.revision_think_time_word = rev_line['revision_think_time_word']
         self.revision_is_first = rev_line['revision_is_first']
         self.revision_is_last = rev_line['revision_is_last']
-        self.revision_provided = rev_line['revision_provided']
+        self.revision_target = rev_line['target']
 
     def chrf(self):
         return sacrebleu.sentence_chrf(self.target, [self.provided]).score
+
+    def chrf_rev(self):
+        return sacrebleu.sentence_chrf(self.revision_target, [self.target]).score
+
+    def ter_rev(self):
+        return sacrebleu.sentence_ter(self.revision_target, [self.target]).score
 
     def ter(self):
         return sacrebleu.sentence_ter(self.target, [self.provided]).score
@@ -151,8 +159,11 @@ def load_mx():
             lambda: defaultdict(lambda: defaultdict(lambda: {}))))
         for line in f:
             rev_line = json.loads(line)
-            rev_data[rev_line['doc_name']][rev_line['user_a']][rev_line['mt_name']][rev_line['source']] = rev_line
-    
+            rev_data[rev_line['doc_name']] \
+                [rev_line['user_a']] \
+                [rev_line['mt_name']] \
+                [rev_line['source']] = rev_line
+
     for doc in data:
         doc.update_rev_doc(rev_data[doc.doc_name][doc.user_a][doc.mt_name])
 

@@ -30,9 +30,10 @@ for doc in data:
     if SENT_AVERAGE:
         mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines]
     else:
+        #  - np.average(user_times[doc.user_u])) / np.std(user_times[doc.user_u]
         mt_times[doc.mt_name] += [
             (x.edit_time_word + x.think_time_word -
-            min(MAX_WORD_TIME, x.think_time_word) - np.average(user_times[doc.user_u])) / np.std(user_times[doc.user_u])
+            min(MAX_WORD_TIME, x.think_time_word))
             for x in doc.lines for _ in x.source.split()
         ]
 
