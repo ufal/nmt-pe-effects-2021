@@ -16,6 +16,14 @@ SENT_AVERAGE = args.sent
 
 MT_ORDER = sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])
 
+user_times = defaultdict(lambda: [])
+for doc in data:
+    user_times[doc.user_u] += [
+        x.edit_time_word + x.think_time_word -
+        min(MAX_WORD_TIME, x.think_time_word)
+        for x in doc.lines for _ in x.source.split()
+    ]
+
 # compute per-model data
 mt_times = {k: [] for k in MT_ORDER}
 for doc in data:
@@ -23,8 +31,9 @@ for doc in data:
         mt_times[doc.mt_name] += [x.edit_time_word for x in doc.lines]
     else:
         mt_times[doc.mt_name] += [
-            x.edit_time_word - min(MAX_WORD_TIME, x.think_time_word)
-            for x in doc.lines for _ in x.target.split()
+            (x.edit_time_word + x.think_time_word -
+            min(MAX_WORD_TIME, x.think_time_word) - np.average(user_times[doc.user_u])) / np.std(user_times[doc.user_u])
+            for x in doc.lines for _ in x.source.split()
         ]
 
 for mt_name, mt_vals in mt_times.items():

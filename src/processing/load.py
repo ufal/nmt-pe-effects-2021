@@ -2,13 +2,15 @@
 
 import argparse
 import json
-import glob, os
+import glob
+import os
 from pathlib import Path
 import xmltodict
 import re
 import sacrebleu
 from nltk.tokenize import word_tokenize
-from utils import f1
+from collections import defaultdict
+
 
 class MxLine():
     def __init__(self, root):
@@ -22,22 +24,34 @@ class MxLine():
         self.comments = []
         self.is_first = False
         self.is_last = False
-        
+
         if self.source[0] == '#':
             self.index = int(re.search('\d+', self.source).group(0))
             return
-        
+
         self.index = None
         self.provided = root['trans-unit']['alt-trans'][1]['target']
         if self.provided is None:
             self.provided = self.source
 
-        self.edit_time = int(root['trans-unit']['m:editing-stats']['m:editing-time'])/1000
-        self.think_time = int(root['trans-unit']['m:editing-stats']['m:thinking-time'])/1000
-        
-        tokens = self.target.split()
+        self.edit_time = int(
+            root['trans-unit']['m:editing-stats']['m:editing-time'])/1000
+        self.think_time = int(
+            root['trans-unit']['m:editing-stats']['m:thinking-time'])/1000
+
+        tokens = self.source.split()
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
+
+    def update_rev_line(self, rev_line):
+        assert(len(rev_line.keys()) > 0)
+        self.revision_edit_time = rev_line['revision_edit_time']
+        self.revision_edit_time_word = rev_line['revision_edit_time_word']
+        self.revision_think_time = rev_line['revision_think_time']
+        self.revision_think_time_word = rev_line['revision_think_time_word']
+        self.revision_is_first = rev_line['revision_is_first']
+        self.revision_is_last = rev_line['revision_is_last']
+        self.revision_provided = rev_line['revision_provided']
 
     def chrf(self):
         return sacrebleu.sentence_chrf(self.target, [self.provided]).score
@@ -45,7 +59,7 @@ class MxLine():
     def ter(self):
         return sacrebleu.sentence_ter(self.target, [self.provided]).score
 
-    def unigram(self):        
+    def unigram(self):
         provided_set = word_tokenize(self.provided.lower())
         target_set = word_tokenize(self.target.lower())
         return f1(
@@ -55,7 +69,8 @@ class MxLine():
 
     def clone(self):
         return MxLine(self.root)
-        
+
+
 class MxDoc():
     def __init__(self, lines, user, index, job_uid):
         self.lines = lines
@@ -65,7 +80,12 @@ class MxDoc():
         self.mt_name = index['mt_name']
         self.index = index
         self.job_uid = job_uid
-    
+
+    def update_rev_doc(self, rev_doc):
+        for line in self.lines:
+            # tags are changed from {j} to {1}
+            line.update_rev_line(rev_doc[line.source.replace("{j}", "{1}")])
+
     def source(self):
         return ''.join([line.source + '\n' for line in self.lines])
 
@@ -81,6 +101,7 @@ class MxDoc():
     def mut_provided_to_target(self):
         for line in self.lines:
             line.target = line.provided
+
 
 def parse_lines(lines, user, index_data, job_uid):
     lines = [MxLine(l) for l in lines if 'trans-unit' in l]
@@ -99,9 +120,13 @@ def parse_lines(lines, user, index_data, job_uid):
         data.append(MxDoc(buffer, user, index, job_uid))
     return data
 
+
 def load_mx():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', '--mxliff-data-dir', default='docs/memsource/raw-translations')
+    parser.add_argument('-d', '--mxliff-data-dir',
+                        default='docs/memsource/raw-translations')
+    parser.add_argument('-r', '--revisions',
+                        default='docs/memsource/data-phase-2.json')
     parser.add_argument('-i', '--index', default='docs/out_p1/index.json')
     args = parser.parse_known_args()[0]
 
@@ -120,7 +145,19 @@ def load_mx():
                 index_data,
                 job_uid
             )
+
+    with open(args.revisions, 'r') as f:
+        rev_data = defaultdict(lambda: defaultdict(
+            lambda: defaultdict(lambda: defaultdict(lambda: {}))))
+        for line in f:
+            rev_line = json.loads(line)
+            rev_data[rev_line['doc_name']][rev_line['user_a']][rev_line['mt_name']][rev_line['source']] = rev_line
+    
+    for doc in data:
+        doc.update_rev_doc(rev_data[doc.doc_name][doc.user_a][doc.mt_name])
+
     return data
+
 
 if __name__ == '__main__':
     load_mx()
