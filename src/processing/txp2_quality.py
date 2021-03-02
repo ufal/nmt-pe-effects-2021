@@ -11,8 +11,8 @@ all_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 think_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
         # microaverage
-        all_times[doc.mt_name] += [x.edit_time_word - x.think_time_word + min(MAX_WORD_TIME, x.think_time_word) for x in doc.lines for _ in x.source.split()]
-        think_times[doc.mt_name] += [min(MAX_WORD_TIME, x.think_time_word) for x in doc.lines for _ in x.source.split()]
+        all_times[doc.mt_name] += [x.revision_edit_time_word - x.revision_think_time_word + min(MAX_WORD_TIME, x.revision_think_time_word) for x in doc.lines for _ in x.source.split()]
+        think_times[doc.mt_name] += [min(MAX_WORD_TIME, x.revision_think_time_word) for x in doc.lines for _ in x.source.split()]
 
 # print model averages
 print('\n'.join([
