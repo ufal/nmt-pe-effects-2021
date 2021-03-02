@@ -11,7 +11,7 @@ data = load_mx()
 # compute per-user data
 user_times = defaultdict(lambda: [])
 for doc in data:
-    user_times[doc.user_a] += [x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME]
+    user_times[doc.user_a] += [x.edit_time_word - x.think_time_word + min(MAX_WORD_TIME, x.think_time_word) for x in doc.lines]
 
 def top_all():
     # actual value plotting

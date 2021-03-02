@@ -8,24 +8,15 @@ from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', '--mt-only', action='store_true')
-parser.add_argument('-a', '--aggregate-documents', action='store_true')
 args = parser.parse_args()
 
 data = load_mx()
 SKIP_SRC_REF = args.mt_only
-AGGREGATE_DOCUMENTS = args.aggregate_documents
 # compute per-model data
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
-    if AGGREGATE_DOCUMENTS:
-        # TODO: this is incorrect
-        doc_time_avg = np.average(
-            [x.edit_time_word for x in doc.lines]
-        )
-        mt_times[doc.mt_name].append(doc_time_avg)
-    else:
-        # microaverage
-        mt_times[doc.mt_name] += [min(MAX_WORD_TIME, x.edit_time_word) for x in doc.lines for _ in x.source.split()]
+    # microaverage
+    mt_times[doc.mt_name] += [x.edit_time_word - x.think_time_word + min(MAX_WORD_TIME, x.think_time_word) for x in doc.lines for _ in x.source.split()]
 
 def top_n(n, points=False):
     # actual value plotting
@@ -44,21 +35,23 @@ def top_n(n, points=False):
     poly1d_fn = np.poly1d(coef)
 
     if points:
-        plt.plot(xval, yval, '.', alpha=0.005, markersize=5)
+        plt.plot(xval, yval, '.', alpha=0.005, markersize=6)
     plt.plot(xval, poly1d_fn(xval), label=f'Top {n:02}, {coef[0]:>6.3f}')
 
 # misc. plot parameters
-plt.figure(figsize=(5, 4))
+plt.figure(figsize=(4, 3.5))
 top_n(15, points=True)
 top_n(13)
 top_n(10)
 top_n(8)
-plt.legend()
-plt.title(
-    ('time per word ') +
-    ('(without src, ref)' if SKIP_SRC_REF else '(with src, ref)')
-)
+plt.ylim(-0.8, 45)
+
+plt.legend(ncol=2,handlelength=1, columnspacing=1, loc="upper center")
+# plt.title(
+#     ('Total time per word ') +
+#     ('(without Reference and Source)' if SKIP_SRC_REF else '(with Reference and Source)')
+# )
 plt.xlabel('BLEU')
-perwhat = 'document' if AGGREGATE_DOCUMENTS else 'sentence'
-plt.ylabel(f'average (per {perwhat}) word edit time')
+plt.ylabel(f'Total time per word')
+plt.tight_layout(rect=(-0.02, -0.01, 1, 1))
 plt.show()

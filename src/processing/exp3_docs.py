@@ -11,7 +11,7 @@ data = load_mx()
 # compute per-doc data
 doc_times = defaultdict(lambda: [])
 for doc in data:
-    doc_times[doc.doc_name] += [x.edit_time_word for x in doc.lines if x.edit_time_word <= MAX_WORD_TIME]
+    doc_times[doc.doc_name] += [x.edit_time_word - x.think_time_word + min(MAX_WORD_TIME, x.think_time_word) for x in doc.lines]
 
 def top_all():
     # actual value plotting

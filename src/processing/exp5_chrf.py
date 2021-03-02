@@ -44,7 +44,7 @@ def top_n(n, points=False):
     poly1d_fn = np.poly1d(coef)
 
     if points:
-        plt.plot(xval, yval, '.', alpha=0.2)
+        plt.plot(xval, yval, '.', alpha=0.2, markersize=6)
     plt.plot(xval, poly1d_fn(xval), label=f'Top {n:02}: {coef[0]:>6.3f}')
 
 # misc. plot parameters
@@ -53,7 +53,7 @@ top_n(15, points=True)
 top_n(13)
 top_n(10)
 top_n(8)
-plt.legend(ncol=2,handlelength=1, columnspacing=1)
+plt.legend(ncol=2,handlelength=1, columnspacing=1, loc="upper center")
 plt.xlabel('BLEU')
 plt.ylabel('ChrF6')
 plt.ylim(0, 1.28)
