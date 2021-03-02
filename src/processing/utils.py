@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+from statistics import NormalDist
+
 # PE, WMT0818
 MT_BLEU = {
     'src': (0, 0),
@@ -32,3 +35,10 @@ MAX_SENT_TIME = MAX_WORD_TIME*20
 
 def f1(x, y):
     return 0 if (x+y) == 0 else 2*x*y/(x+y)
+
+
+def confidence_change(data, confidence=0.95):
+  dist = NormalDist.from_samples(data)
+  z = NormalDist().inv_cdf((1 + confidence) / 2.)
+  h = dist.stdev * z / ((len(data) - 1) ** .5)
+  return h
