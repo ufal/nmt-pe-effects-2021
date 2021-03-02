@@ -8,27 +8,18 @@ from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', '--mt-only', action='store_true')
-parser.add_argument('-a', '--aggregate-documents', action='store_true')
 args = parser.parse_args()
 
 data = load_mx()
 SKIP_SRC_REF = args.mt_only
-AGGREGATE_DOCUMENTS = args.aggregate_documents
 
 # compute per-model data
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
-    if AGGREGATE_DOCUMENTS:
-        # TODO: this is incorrect
-        doc_time_avg = np.average(
-            [x.revision_edit_time_word for x in doc.lines]
-        )
-        mt_times[doc.mt_name].append(doc_time_avg)
-    else:
-        # microaverage
-        mt_times[doc.mt_name] += [
-            min(MAX_WORD_TIME, x.revision_edit_time_word)
-            for x in doc.lines for _ in x.source.split()]
+    # microaverage
+    mt_times[doc.mt_name] += [
+        x.revision_edit_time_word - x.revision_think_time_word + min(MAX_WORD_TIME, x.revision_think_time_word)
+        for x in doc.lines for _ in x.source.split()]
 
 def top_n(n, points=False):
     # actual value plotting
@@ -63,7 +54,7 @@ plt.title(
     ('(without src, ref)' if SKIP_SRC_REF else '(with src, ref)')
 )
 plt.xlabel('BLEU')
-perwhat = 'document' if AGGREGATE_DOCUMENTS else 'sentence'
+perwhat = 'sentence'
 plt.ylabel(f'average (per {perwhat}) word edit time')
 plt.show()
 

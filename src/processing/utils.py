@@ -29,6 +29,18 @@ def pretty_mt_name(mt):
         return 'GGLE'
     return mt.upper()
 
+def pretty_mt_name_2(mt):
+    # Online 1, Online 2
+    if mt == 'microsoft':
+        return 'Microsoft'
+    if mt == 'google':
+        return 'Google'
+    if mt == 'ref':
+        return 'Reference'
+    if mt == 'src':
+        return 'Source'
+    return mt.upper()
+
 
 MAX_WORD_TIME = 20
 MAX_SENT_TIME = MAX_WORD_TIME*20

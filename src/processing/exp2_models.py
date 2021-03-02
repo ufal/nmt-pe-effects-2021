@@ -19,7 +19,7 @@ MT_ORDER = sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])
 user_times = defaultdict(lambda: [])
 for doc in data:
     user_times[doc.user_u] += [
-        x.edit_time_word + x.think_time_word -
+        x.edit_time_word - x.think_time_word +
         min(MAX_WORD_TIME, x.think_time_word)
         for x in doc.lines for _ in x.source.split()
     ]
