@@ -14,7 +14,6 @@ args = parser.parse_args()
 data = load_mx()
 SKIP_SRC_REF = args.mt_only
 AGGREGATE_DOCUMENTS = args.aggregate_documents
-
 # compute per-model data
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
@@ -27,7 +26,6 @@ for doc in data:
     else:
         # microaverage
         mt_times[doc.mt_name] += [min(MAX_WORD_TIME, x.edit_time_word) for x in doc.lines for _ in x.source.split()]
-
 
 def top_n(n, points=False):
     # actual value plotting
