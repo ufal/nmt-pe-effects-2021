@@ -47,10 +47,6 @@ top_n(8)
 plt.ylim(-0.8, 45)
 
 plt.legend(ncol=2,handlelength=1, columnspacing=1, loc="upper center")
-# plt.title(
-#     ('Total time per word ') +
-#     ('(without Reference and Source)' if SKIP_SRC_REF else '(with Reference and Source)')
-# )
 plt.xlabel('BLEU')
 plt.ylabel(f'Total time per word')
 plt.tight_layout(rect=(-0.02, -0.01, 1, 1))

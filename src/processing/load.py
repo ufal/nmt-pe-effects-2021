@@ -14,7 +14,7 @@ from utils import f1
 
 
 class MxLine():
-    def __init__(self, root):
+    def __init__(self, root, spec=False):
         self.root = root
         self.source = root['trans-unit']['source']
         self.target = root['trans-unit']['target']
@@ -43,6 +43,14 @@ class MxLine():
         tokens = self.source.split()
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
+    
+    def conver_to_template(self):
+        del self.target
+        del self.tunit_id
+        del self.edit_time
+        del self.think_time
+        del self.edit_time_word
+        del self.think_time_word
 
     def update_rev_line(self, rev_line):
         assert(len(rev_line.keys()) > 0)
@@ -63,17 +71,23 @@ class MxLine():
         self.lqa = [x for x in self.lqa if len(x) != 0]
         self.lqa = [item for subl in self.lqa for item in subl]
 
-    def chrf(self):
-        return sacrebleu.sentence_chrf(self.target, [self.provided]).score
-
     def lqa_count(self):
-        return len(self.lqa)
+        return sum([x['severityId'] for x in self.lqa])
 
-    def chrf_rev(self):
-        return sacrebleu.sentence_chrf(self.revision_target, [self.target]).score
+    def chrf_p0_p1(self):
+        if hasattr(self, "target"):
+            return sacrebleu.sentence_chrf(self.target, [self.provided]).score
+        else:
+            return 0
 
-    def ter_rev(self):
-        return sacrebleu.sentence_ter(self.revision_target, [self.target]).score
+    def chrf_p1_p2(self):
+        if hasattr(self, "target"):
+            return sacrebleu.sentence_chrf(self.revision_target, [self.target]).score
+        else:
+            return 0
+
+    def chrf_p0_p2(self):
+        return sacrebleu.sentence_chrf(self.revision_target, [self.provided]).score
 
     def ter(self):
         return sacrebleu.sentence_ter(self.target, [self.provided]).score
@@ -114,8 +128,11 @@ class MxDoc():
     def target(self):
         return ''.join([line.target + '\n' for line in self.lines])
 
-    def clone(self):
-        return MxDoc([x.clone() for x in self.lines], self.user_u, self.index)
+    def clone(self, spec=False):
+        doc = MxDoc([x.clone() for x in self.lines], self.user_u, self.index, self.job_uid)
+        if spec:
+            [line.conver_to_template() for line in doc.lines]
+        return doc
 
     def mut_provided_to_target(self):
         for line in self.lines:
@@ -165,13 +182,34 @@ def load_mx():
                 job_uid
             )
 
+    data_templates = {}
+    for doc in data:
+        if (doc.mt_name, doc.doc_name) not in data_templates:
+            data_templates[(doc.mt_name, doc.doc_name)] = doc.clone(spec=True)
+    for (mt_name, doc_name), doc in data_templates.items():
+        if mt_name == "ref":
+            doc.user_a = "rr"
+            doc.mt_name += "r"
+            data.append(doc)
+        elif mt_name == "m11":
+            doc.user_a = "rm"
+            doc.mt_name += "r"
+            data.append(doc)
+        else:
+            pass
+
     with open(args.revisions, 'r') as f:
         rev_data = defaultdict(lambda: defaultdict(
             lambda: defaultdict(lambda: defaultdict(lambda: {}))))
         for line in f:
             rev_line = json.loads(line)
-            rev_data[rev_line['doc_name']][rev_line['user_a']
-                                           ][rev_line['mt_name']][rev_line['source']] = rev_line
+            if rev_line['user_a'] in {"rr", "rm"}:
+                rev_data[rev_line['doc_name']][rev_line['user_a']][rev_line['mt_name']+"r"][rev_line['source']] = rev_line
+            else:
+                rev_data[rev_line['doc_name']][rev_line['user_a']][rev_line['mt_name']][rev_line['source']] = rev_line
+
+    # for doc_name in set(rev_data.keys()):
+    #     data.append(MxDoc([], -1, {"annotator": -1, "doc_name": doc_name, "mt_name": "ref"}, None))
 
     for doc in data:
         doc.update_rev_doc(rev_data[doc.doc_name][doc.user_a][doc.mt_name])

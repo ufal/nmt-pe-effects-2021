@@ -8,23 +8,15 @@ from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', '--mt-only', action='store_true')
-parser.add_argument('-a', '--aggregate-documents', action='store_true')
 args = parser.parse_args()
 
 data = load_mx()
 SKIP_SRC_REF = args.mt_only
-AGGREGATE_DOCUMENTS = args.aggregate_documents
 
 # compute per-model data
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
-    if AGGREGATE_DOCUMENTS:
-        doc_time_avg = np.average(
-            [x.chrf() for x in doc.lines]
-        )
-        mt_times[doc.mt_name].append(doc_time_avg)
-    else:
-        mt_times[doc.mt_name] += [x.chrf() for x in doc.lines]
+    mt_times[doc.mt_name] += [x.chrf_p0_p1() for x in doc.lines]
 
 
 def top_n(n, points=False):
