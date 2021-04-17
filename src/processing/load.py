@@ -44,7 +44,7 @@ class MxLine():
         self.edit_time_word = self.edit_time / len(tokens)
         self.think_time_word = self.think_time / len(tokens)
     
-    def conver_to_template(self):
+    def convert_to_template(self):
         del self.target
         del self.tunit_id
         del self.edit_time
@@ -131,7 +131,7 @@ class MxDoc():
     def clone(self, spec=False):
         doc = MxDoc([x.clone() for x in self.lines], self.user_u, self.index, self.job_uid)
         if spec:
-            [line.conver_to_template() for line in doc.lines]
+            [line.convert_to_template() for line in doc.lines]
         return doc
 
     def mut_provided_to_target(self):
@@ -157,7 +157,7 @@ def parse_lines(lines, user, index_data, job_uid):
     return data
 
 
-def load_mx():
+def load_mx(p1_only=False):
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--mxliff-data-dir',
                         default='docs/memsource/raw-translations')
@@ -181,6 +181,8 @@ def load_mx():
                 index_data,
                 job_uid
             )
+    if p1_only:
+        return data
 
     data_templates = {}
     for doc in data:

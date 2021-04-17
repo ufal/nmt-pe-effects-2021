@@ -13,16 +13,15 @@ args = parser.parse_args()
 data = load_mx()
 SKIP_SRC_REF = args.mt_only
 
+plt.figure(figsize=(4, 3.5))
+
 # compute per-model data
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
     mt_times[doc.mt_name] += [x.chrf_p0_p1() for x in doc.lines]
 
-
-def top_n(n, points=False):
-    # actual value plotting
     bleu_time = []
-    for mt_name in list(mt_times.keys())[-n:]:
+    for mt_name in mt_times.keys():
         bleus = MT_BLEU[mt_name]
         if SKIP_SRC_REF and mt_name in {'src', 'ref'}:
             continue
@@ -40,11 +39,6 @@ def top_n(n, points=False):
     plt.plot(xval, poly1d_fn(xval), label=f'Top {n:02}: {coef[0]:>6.3f}')
 
 # misc. plot parameters
-plt.figure(figsize=(4, 3.5))
-top_n(15, points=True)
-top_n(13)
-top_n(10)
-top_n(8)
 plt.legend(ncol=2,handlelength=1, columnspacing=1, loc="upper center")
 plt.xlabel('BLEU')
 plt.ylabel('ChrF6')
