@@ -15,6 +15,8 @@ SKIP_SRC_REF = args.mt_only
 # compute per-model data
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
 for doc in data:
+    if doc.mt_name not in MT_BLEU.keys():
+        continue
     # microaverage
     mt_times[doc.mt_name] += [x.edit_time_word - x.think_time_word + min(MAX_WORD_TIME, x.think_time_word) for x in doc.lines for _ in x.source.split()]
 
@@ -46,8 +48,9 @@ top_n(10)
 top_n(8)
 plt.ylim(-0.8, 45)
 
+plt.ylim(-0.5, 20)
 plt.legend(ncol=2,handlelength=1, columnspacing=1, loc="upper center")
 plt.xlabel('BLEU')
-plt.ylabel(f'Total time per word')
+plt.ylabel(f'Total time per word (s)')
 plt.tight_layout(rect=(-0.02, -0.01, 1, 1))
 plt.show()
