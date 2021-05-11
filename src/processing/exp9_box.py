@@ -4,7 +4,7 @@ from load import *
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
+from utils import MT_BLEU, MAX_WORD_TIME, pretty_mt_name
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', '--mt-only', action='store_true')
@@ -29,7 +29,7 @@ def top_n(n):
         if SKIP_SRC_REF and mt_name in {'src', 'ref'}:
             continue
         bleu_time.append([v for v in mt_times[mt_name]])
-        bleu_labels.append(bleus[0])
+        bleu_labels.append(f"{pretty_mt_name(mt_name)} ({bleus[0]})")
 
     xval = [x[0] for x in bleu_time]
     yval = [x[1] for x in bleu_time]
@@ -39,10 +39,10 @@ def top_n(n):
     # poly1d_fn = np.poly1d(coef)
     # plt.plot(xval, poly1d_fn(xval), label=f'Top {n:02}, {coef[0]:>6.3f}')
     plt.boxplot(bleu_time, labels=bleu_labels)
-    plt.xticks(rotation=70)
+    plt.xticks(rotation=70, fontsize=9)
 
 # misc. plot parameters
-plt.figure(figsize=(4, 3.5))
+plt.figure(figsize=(4, 4.2))
 top_n(15)
 plt.ylim(-0.8, 45)
 
