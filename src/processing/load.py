@@ -72,7 +72,16 @@ class MxLine():
         self.lqa = [item for subl in self.lqa for item in subl]
 
     def lqa_count(self):
+        if self.lqa:
+            print(self.lqa[0]["errorCategoryId"])
         return sum([x['severityId'] for x in self.lqa])
+
+    def lqa_distribution(self):
+        return (
+            sum([x['severityId'] for x in self.lqa if x["errorCategoryId"] == 1]),
+            sum([x['severityId'] for x in self.lqa if x["errorCategoryId"] == 2]),
+            sum([x['severityId'] for x in self.lqa if x["errorCategoryId"] == 8]),
+        )
 
     def chrf_p0_p1(self):
         if hasattr(self, "target"):

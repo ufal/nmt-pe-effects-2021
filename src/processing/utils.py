@@ -66,6 +66,17 @@ def pretty_mt_name_2(mt):
         return 'Source'
     return mt.upper()
 
+DOMAIN_MAP = {
+    "hole": "News",
+    "leap": "News",
+    "turner": "News",
+    "whistle": "News",
+    "china": "News",
+    "lease": "Lease",
+    "audit_i": "Audit",
+    "audit_r": "Audit",
+}
+
 
 MAX_WORD_TIME = 10
 MAX_SENT_TIME = MAX_WORD_TIME*20
