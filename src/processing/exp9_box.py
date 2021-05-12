@@ -31,13 +31,13 @@ def top_n(n):
         bleu_time.append([v for v in mt_times[mt_name]])
         bleu_labels.append(f"{pretty_mt_name(mt_name)} ({bleus[0]})")
 
-    xval = [x[0] for x in bleu_time]
-    yval = [x[1] for x in bleu_time]
+    bleu_means = [np.average(x) for x in bleu_time]
 
     # linear fit
     # coef = np.polyfit(xval, yval, 1)
     # poly1d_fn = np.poly1d(coef)
     # plt.plot(xval, poly1d_fn(xval), label=f'Top {n:02}, {coef[0]:>6.3f}')
+    plt.scatter(range(1, len(bleu_means)+1), bleu_means, marker="s", s=10)
     plt.boxplot(bleu_time, labels=bleu_labels)
     plt.xticks(rotation=70, fontsize=9)
 
