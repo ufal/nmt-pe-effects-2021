@@ -3,8 +3,9 @@
 from load import *
 import numpy as np
 import matplotlib.pyplot as plt
+from collections import defaultdict
 from sklearn.linear_model import LinearRegression
-from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
+from utils import MT_BLEU_EXT, MAX_WORD_TIME, MAX_SENT_TIME
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', '--mt-only', action='store_true')
@@ -14,17 +15,21 @@ data = load_mx()
 SKIP_SRC_REF = args.mt_only
 
 # compute per-model data
-mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
+mt_times = {k: [] for k in sorted(MT_BLEU_EXT.keys(), key=lambda x: MT_BLEU_EXT[x][0])}
+doc_times = defaultdict(lambda:[])
 for doc in data:
     # microaverage
     mt_times[doc.mt_name] += [ x.lqa_count() for x in doc.lines ]
+    doc_times[doc.doc_name] += [ x.lqa_count() for x in doc.lines ]
 
 def top_n(n, points=False):
     # actual value plotting
     bleu_time = []
     for mt_name in list(mt_times.keys())[-n:]:
-        bleus = MT_BLEU[mt_name]
-        if SKIP_SRC_REF and mt_name in {'src', 'ref'}:
+        bleus = MT_BLEU_EXT[mt_name]
+        if SKIP_SRC_REF and mt_name in {'src', 'ref', 'refr'}:
+            continue
+        if mt_name == 'm11r':
             continue
         bleu_time += [(bleus[0], v) for v in mt_times[mt_name]]
 
@@ -42,10 +47,10 @@ def top_n(n, points=False):
 
 # misc. plot parameters
 plt.figure(figsize=(5, 4))
-top_n(15, points=True)
+top_n(17, points=True)
 top_n(13)
 top_n(10)
-top_n(8)
+top_n(9)
 plt.legend()
 plt.title(
     ('per word ') +
@@ -64,3 +69,15 @@ print('\n'.join([
 
 
 print("\nTotal avg:", np.average([np.average(x) for k,x in mt_times.items() if k not in {"google", "m10", "m11"}]))
+
+
+print()
+# print doc averages
+print('\n'.join([
+    f'{name:>10} {np.average(v):6.2f}'
+    for name, v
+    in sorted(doc_times.items(), key=lambda x: np.average(x[1]))
+]))
+
+print("audit", np.average(doc_times["audit_i"]+doc_times["audit_r"]))
+print("wmt", np.average(doc_times["hole"]+doc_times["china"]+doc_times["turner"]+doc_times["whistle"]))

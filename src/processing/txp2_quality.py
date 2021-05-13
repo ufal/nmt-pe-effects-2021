@@ -3,12 +3,12 @@
 from load import *
 import numpy as np
 import matplotlib.pyplot as plt
-from utils import MT_BLEU, MAX_WORD_TIME, pretty_mt_name_2, confidence_change
+from utils import MT_BLEU_EXT, MAX_WORD_TIME, pretty_mt_name_2, confidence_change
 
 data = load_mx()
 # compute per-model data
-all_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
-think_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
+all_times = {k: [] for k in sorted(MT_BLEU_EXT.keys(), key=lambda x: MT_BLEU_EXT[x][0])}
+think_times = {k: [] for k in sorted(MT_BLEU_EXT.keys(), key=lambda x: MT_BLEU_EXT[x][0])}
 for doc in data:
         # microaverage
         all_times[doc.mt_name] += [x.revision_edit_time_word - x.revision_think_time_word + min(MAX_WORD_TIME, x.revision_think_time_word) for x in doc.lines for _ in x.source.split()]
