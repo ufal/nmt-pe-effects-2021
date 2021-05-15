@@ -2,7 +2,7 @@
 
 Title is WIP. This is a repository for an experiment relating NMT quality and post-editing efforts.
 
-## Processing
+<!-- ## Processing
 
 - exp1 top - pe times per model
 - exp2 models - same as exp1 with BLEU ordering, but same distances
@@ -10,7 +10,7 @@ Title is WIP. This is a repository for an experiment relating NMT quality and po
 - exp4 user - pe times per user
 - exp5 ter - ter per model
 - exp6 len - output len per model
-- exp7 unigram - output unigram F1 score per model
+- exp7 unigram - output unigram F1 score per model -->
 
 ## Documents
 
@@ -30,6 +30,6 @@ Title is WIP. This is a repository for an experiment relating NMT quality and po
 
 Supported by [Memsource](https://memsource.com).
 
-## References
+## Related References
 1. https://www.cs.jhu.edu/~phi/publications/machine-translation-quality.pdf
 2. https://www.dlsi.ua.es/~fsanchez/pub/pdf/forcada17a.pdf

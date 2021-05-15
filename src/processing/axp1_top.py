@@ -4,7 +4,11 @@ from load import *
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
+from utils import MT_BLEU, MAX_WORD_TIME, MT_BERTSCORE
+
+MT_BLEU = MT_BERTSCORE
+MT_BERTSCORE["ref"] = 0
+MT_BERTSCORE["src"] = 0
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', '--mt-only', action='store_true')
@@ -14,7 +18,7 @@ data = load_mx()
 SKIP_SRC_REF = args.mt_only
 
 # compute per-model data
-mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
+mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x])}
 for doc in data:
     # microaverage
     mt_times[doc.mt_name] += [

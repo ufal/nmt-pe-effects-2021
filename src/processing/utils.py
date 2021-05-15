@@ -89,3 +89,19 @@ def confidence_change(data, confidence=0.95):
     z = NormalDist().inv_cdf((1 + confidence) / 2.)
     h = dist.stdev * z / ((len(data) - 1) ** .5)
     return h
+
+MT_BERTSCORE = {
+    "google": 0.897211,
+    "microsoft": 0.882800,
+    "m01": 0.854500,
+    "m02": 0.874876,
+    "m03": 0.881169,
+    "m04": 0.880343,
+    "m05": 0.889258,
+    "m06": 0.888293,
+    "m07": 0.891763,
+    "m08": 0.892241,
+    "m09": 0.893417,
+    "m10": 0.894922,
+    "m11": 0.895255,
+}
