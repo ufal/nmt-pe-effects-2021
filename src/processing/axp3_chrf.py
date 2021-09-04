@@ -4,19 +4,26 @@ from load import *
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from utils import pretty_mt_name_2, MT_BLEU_EXT
+from utils import MT_TER, pretty_mt_name_2, MT_BLEU_EXT
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', '--mt-only', action='store_true')
+parser.add_argument('--ter', action='store_true')
 args = parser.parse_args()
+
+if args.ter:
+    MT_BLEU = {k:(v,None) for k,v in MT_TER.items()}
+    MT_BLEU_EXT = {k:(v,None) for k,v in MT_TER.items()}
+    MT_BLEU_EXT["refr"] = MT_BLEU["ref"]
+    MT_BLEU_EXT["m11r"] = MT_BLEU["m11"]
 
 data = load_mx()
 SKIP_SRC_REF = args.mt_only
 
 # compute per-model data
-mt_times_0_1 = {k: [] for k in sorted(MT_BLEU_EXT.keys(), key=lambda x: MT_BLEU_EXT[x][0])}
-mt_times_1_2 = {k: [] for k in sorted(MT_BLEU_EXT.keys(), key=lambda x: MT_BLEU_EXT[x][0])}
-mt_times_0_2 = {k: [] for k in sorted(MT_BLEU_EXT.keys(), key=lambda x: MT_BLEU_EXT[x][0])}
+mt_times_0_1 = {k: [] for k in sorted(MT_BLEU_EXT.keys(), key=lambda x: MT_BLEU_EXT[x][0], reverse=args.ter)}
+mt_times_1_2 = {k: [] for k in sorted(MT_BLEU_EXT.keys(), key=lambda x: MT_BLEU_EXT[x][0], reverse=args.ter)}
+mt_times_0_2 = {k: [] for k in sorted(MT_BLEU_EXT.keys(), key=lambda x: MT_BLEU_EXT[x][0], reverse=args.ter)}
 for doc in data:
     mt_times_1_2[doc.mt_name] += [x.chrf_p1_p2() for x in doc.lines]
     mt_times_0_2[doc.mt_name] += [x.chrf_p0_p2() for x in doc.lines]

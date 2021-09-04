@@ -4,22 +4,26 @@ from load import *
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
+from utils import MT_BLEU, MT_TER, MAX_WORD_TIME, MAX_SENT_TIME
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-m', '--mt-only', action='store_true')
+parser.add_argument('--ter', action='store_true')
 args = parser.parse_args()
 
 data = load_mx()
 SKIP_SRC_REF = args.mt_only
 
+if args.ter:
+    MT_BLEU = {k:(v,None) for k,v in MT_TER.items()}
+
 plt.figure(figsize=(4, 3.5))
 
-mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
+mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0], reverse=args.ter)}
 for doc in data:
     if doc.mt_name not in MT_BLEU.keys():
         continue
-    mt_times[doc.mt_name] += [x.chrf_p1_p2() for x in doc.lines]
+    mt_times[doc.mt_name] += [x.chrf_p0_p2() for x in doc.lines]
 def top_n(n, points=False):
 # compute per-model data
 
@@ -56,7 +60,7 @@ top_n(8)
 
 # misc. plot parameters
 plt.legend(ncol=2,handlelength=1, columnspacing=1, loc="upper center")
-plt.xlabel('BLEU')
+plt.xlabel('TER' if args.ter else 'BLEU')
 plt.ylabel('ChrF2')
 plt.ylim(0, 1.28)
 

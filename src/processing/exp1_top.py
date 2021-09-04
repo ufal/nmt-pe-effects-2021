@@ -4,16 +4,22 @@ from load import *
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME
+from utils import MT_BLEU, MAX_WORD_TIME, MAX_SENT_TIME, MT_TER
 
 parser = argparse.ArgumentParser()
+parser.add_argument('--ter', action='store_true')
 parser.add_argument('-m', '--mt-only', action='store_true')
 args = parser.parse_args()
 
 data = load_mx()
+
+if args.ter:
+    MT_BLEU = {k:(v,None) for k,v in MT_TER.items()}
+
+
 SKIP_SRC_REF = args.mt_only
 # compute per-model data
-mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0])}
+mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x][0], reverse=args.ter)}
 for doc in data:
     if doc.mt_name not in MT_BLEU.keys():
         continue

@@ -4,15 +4,21 @@ from load import *
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from utils import MT_BLEU, MAX_WORD_TIME, MT_BERTSCORE
+from utils import MT_BLEU, MT_TER, MAX_WORD_TIME, MT_BERTSCORE
 
-MT_BLEU = MT_BERTSCORE
 MT_BERTSCORE["ref"] = 0
 MT_BERTSCORE["src"] = 0
 
 parser = argparse.ArgumentParser()
+parser.add_argument('--ter', action='store_true')
+parser.add_argument('--bert', action='store_true')
 parser.add_argument('-m', '--mt-only', action='store_true')
 args = parser.parse_args()
+
+if args.ter:
+    MT_BLEU = {k:(v,None) for k,v in MT_TER.items()}
+if args.bert:
+    MT_BLEU = {k:(v,None) for k,v in MT_BERTSCORE.items()}
 
 data = load_mx()
 SKIP_SRC_REF = args.mt_only
@@ -20,6 +26,8 @@ SKIP_SRC_REF = args.mt_only
 # compute per-model data
 mt_times = {k: [] for k in sorted(MT_BLEU.keys(), key=lambda x: MT_BLEU[x])}
 for doc in data:
+    if doc.mt_name in {"refr", "m11r"}:
+        continue
     # microaverage
     mt_times[doc.mt_name] += [
         x.revision_edit_time_word - x.revision_think_time_word + min(MAX_WORD_TIME, x.revision_think_time_word)
@@ -32,6 +40,7 @@ def top_n(n, points=False):
         bleus = MT_BLEU[mt_name]
         if SKIP_SRC_REF and mt_name in {'src', 'ref'}:
             continue
+        print(bleus)
         bleu_time += [(bleus[0], v) for v in mt_times[mt_name]]
 
     xval = [x[0] for x in bleu_time]
