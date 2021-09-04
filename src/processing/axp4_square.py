@@ -24,7 +24,7 @@ for mt_name in MT_BLEU_EXT.keys():
     lqa1 = np.average([x[0] for x in mt_times[mt_name]])
     lqa2 = np.average([x[1] for x in mt_times[mt_name]])
     lqa8 = np.average([x[2] for x in mt_times[mt_name]])
-    lqaAvg = np.average([x for x in mt_times[mt_name]])
+    lqaAvg = np.average([sum(x) for x in mt_times[mt_name]])
     print(pretty_mt_name_2(mt_name),
         "& \\blocksimple{", lqa1, "}",
         "& \\blocksimple{", lqa2, "}",
@@ -33,13 +33,13 @@ for mt_name in MT_BLEU_EXT.keys():
         "\\\\"
     )
 
-print("\n"*5)
+print("\n\midrule\n")
 
 for doc_name in list(domain_times.keys()):
     lqa1 = np.average([x[0] for x in domain_times[doc_name]])
     lqa2 = np.average([x[1] for x in domain_times[doc_name]])
     lqa8 = np.average([x[2] for x in domain_times[doc_name]])
-    lqaAvg = np.average([x for x in domain_times[doc_name]])
+    lqaAvg = np.average([sum(x) for x in domain_times[doc_name]])
     print(doc_name,
         "& \\blocksimple{", lqa1, "}",
         "& \\blocksimple{", lqa2, "}",

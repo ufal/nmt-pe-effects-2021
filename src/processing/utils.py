@@ -68,7 +68,7 @@ def pretty_mt_name_2(mt):
 
 DOMAIN_MAP = {
     "hole": "News",
-    "leap": "News",
+    "leap": "Technical",
     "turner": "News",
     "whistle": "News",
     "china": "News",

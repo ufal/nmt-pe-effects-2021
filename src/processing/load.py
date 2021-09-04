@@ -71,17 +71,27 @@ class MxLine():
         self.lqa = [x for x in self.lqa if len(x) != 0]
         self.lqa = [item for subl in self.lqa for item in subl]
 
-    def lqa_count(self):
+    def lqa_count(self, skip_neutral=True):
         if self.lqa:
-            print(self.lqa[0]["errorCategoryId"])
-        return sum([x['severityId'] for x in self.lqa])
+            assert all([x["errorCategoryId"] in {1, 2, 8} for x in self.lqa]) 
+        if skip_neutral:
+            return sum([x['severityId']-1 for x in self.lqa])
+        else:
+            return sum([x['severityId'] for x in self.lqa])
 
-    def lqa_distribution(self):
-        return (
-            sum([x['severityId'] for x in self.lqa if x["errorCategoryId"] == 1]),
-            sum([x['severityId'] for x in self.lqa if x["errorCategoryId"] == 2]),
-            sum([x['severityId'] for x in self.lqa if x["errorCategoryId"] == 8]),
-        )
+    def lqa_distribution(self, skip_neutral=True):
+        if skip_neutral:
+            return (
+                sum([x['severityId']-1 for x in self.lqa if x["errorCategoryId"] == 1]),
+                sum([x['severityId']-1 for x in self.lqa if x["errorCategoryId"] == 2]),
+                sum([x['severityId']-1 for x in self.lqa if x["errorCategoryId"] == 8]),
+            )
+        else:
+            return (
+                sum([x['severityId'] for x in self.lqa if x["errorCategoryId"] == 1]),
+                sum([x['severityId'] for x in self.lqa if x["errorCategoryId"] == 2]),
+                sum([x['severityId'] for x in self.lqa if x["errorCategoryId"] == 8]),
+            )
 
     def chrf_p0_p1(self):
         if hasattr(self, "target"):

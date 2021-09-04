@@ -19,6 +19,7 @@ for doc in data:
         continue
     # microaverage
     mt_times[doc.mt_name] += [x.edit_time_word - x.think_time_word + min(MAX_WORD_TIME, x.think_time_word) for x in doc.lines for _ in x.source.split()]
+    # mt_times[doc.mt_name] += [x.edit_time_word - x.think_time_word + min(MAX_WORD_TIME, x.think_time_word) for x in doc.lines]
 
 def top_n(n, points=False):
     # actual value plotting
