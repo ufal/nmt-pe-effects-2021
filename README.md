@@ -1,6 +1,6 @@
 # Neural Machine Translation Quality and Post-Editing Performance
 
-Title is WIP. This is a repository for an experiment relating NMT quality and post-editing efforts.
+This is a repository for an experiment relating NMT quality and post-editing efforts.
 
 <!-- ## Processing
 
