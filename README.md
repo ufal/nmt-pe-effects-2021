@@ -1,16 +1,15 @@
 # Neural Machine Translation Quality and Post-Editing Performance
 
-This is a repository for an experiment relating NMT quality and post-editing efforts, to be presented at EMNLP2021 (pre-print ![available](https://arxiv.org/abs/2109.05016)).
-Please (currently) cite the following when you use this research:
+This is a repository for an experiment relating NMT quality and post-editing efforts, presented at EMNLP2021 ([presentation recording](https://youtu.be/rCuoUbmJ5Uk)).
+Please cite the following [paper](https://aclanthology.org/2021.emnlp-main.801/) when you use this research:
 
 ```
-@misc{zouhar2021neural,
-      title={Neural Machine Translation Quality and Post-Editing Performance}, 
-      author={Vilém Zouhar and Aleš Tamchyna and Martin Popel and Ondřej Bojar},
-      year={2021},
-      eprint={2109.05016},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{zouhar2021neural,
+  title={Neural Machine Translation Quality and Post-Editing Performance},
+  author={Zouhar, Vil{\'e}m and Popel, Martin and Bojar, Ond{\v{r}}ej and Tamchyna, Ale{\v{s}}},
+  booktitle={Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+  pages={10204--10214},
+  year={2021}
 }
 ```
 
