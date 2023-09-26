@@ -9,9 +9,12 @@ Please cite the following [paper](https://aclanthology.org/2021.emnlp-main.801/)
   author={Zouhar, Vil{\'e}m and Popel, Martin and Bojar, Ond{\v{r}}ej and Tamchyna, Ale{\v{s}}},
   booktitle={Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
   pages={10204--10214},
-  year={2021}
+  year={2021},
+  url={https://aclanthology.org/2021.emnlp-main.801/}
 }
 ```
+
+[![Paper video presentation](https://img.youtube.com/vi/rCuoUbmJ5Uk/0.jpg)](https://www.youtube.com/watch?v=rCuoUbmJ5Uk)
 
 <!-- ## Processing
 
