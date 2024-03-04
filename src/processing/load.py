@@ -181,7 +181,7 @@ def load_mx(p1_only=False):
     parser.add_argument('-d', '--mxliff-data-dir',
                         default='docs/memsource/raw-translations')
     parser.add_argument('-r', '--revisions',
-                        default='docs/memsource/data-phase-2.json')
+                        default='docs/memsource/data-phase-2.jsonl')
     parser.add_argument('-i', '--index', default='docs/out_p1/index.json')
     args = parser.parse_known_args()[0]
 

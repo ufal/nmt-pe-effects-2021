@@ -14,6 +14,13 @@ Please cite the following [paper](https://aclanthology.org/2021.emnlp-main.801/)
 }
 ```
 
+You can [access the data on huggingface](https://huggingface.co/datasets/zouharvi/nmt-pe-effects):
+```python3
+from datasets import load_dataset
+data_p1 = load_dataset("zouharvi/nmt-pe-effects", "phase_1")
+data_p2 = load_dataset("zouharvi/nmt-pe-effects", "phase_2")
+```
+
 [![Paper video presentation](https://img.youtube.com/vi/rCuoUbmJ5Uk/0.jpg)](https://www.youtube.com/watch?v=rCuoUbmJ5Uk)
 
 <!-- ## Processing
